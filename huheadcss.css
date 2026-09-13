@@ -1,0 +1,216 @@
+/*HU Category Items*/
+html body .CategoryList .ListItemCategory h3 a{
+background: none !important;
+color: black !important;
+padding: 0px !important;
+text-decoration: underline;
+}
+.CategoryList .ListItemCategory h3 a:hover{
+background: none !important;
+color: #2782ad !important;
+}
+
+
+.CategoryList .ListItemCategory{
+min-height: unset !important;
+min-width: unset !important;
+margin: 0px !important;
+}
+
+
+/*HU Ribbon*/
+
+.huribbon{
+height: 30px;
+background-color: red;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 12px;
+font-weight: bold;
+margin: 0;
+padding: 0;
+}
+
+
+.huribbonlink{
+color: white;
+text-decoration: none;
+}
+
+.huribbonlink:hover{
+text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .huribbon {
+      height: 56px;
+      font-size: 11px;
+      padding: 5px 5px;
+    }
+  }
+
+/* Muuta normaalihinnan väri */
+div:not(:has(.LineThrough)) .Price .price-value {
+    color: #00008B;
+}
+/*ProductNo*/
+.ProductNo{
+color: white;
+}
+/*Hero banner Start*/
+.herobanner{
+width: 100%;
+height: auto;
+}
+@media (max-width: 768px){
+.herobanner {
+aspect-ratio: 4 / 5; 
+}
+}
+@media (min-width: 769px) {
+.herobanner {
+aspect-ratio: 1920 / 792;
+}
+}
+/*Hero banner End*/
+
+/*Product title font mobile*/
+@media (max-width: 768px){h3.TopPaddingWide > a {
+    font-size: 0.99em !important;
+}h3.TopPaddingWide{
+padding-top: 0px !important;
+margin-bottom: 0px;
+}.price-value{
+margin-bottom: 0px;
+}
+.InfoArea{
+padding-bottom: 0px !important;
+margin-bottom: 0px !important;
+}
+}
+/*Product title font mobile End*/
+
+
+#NavElement_81769832{
+display: none;}
+
+body > div > div.Header.HorizontalNavBar > div{
+margin-bottom: 20px;}
+
+.HorizontalDisplay.NavBarElement0.show-on-mobile{
+width: 150%;
+}
+
+.SearchToggle a:before{
+position: absolute;
+left: 50px;}
+
+
+.lazybannerit{
+width: 100%;
+ max-width: 100%;
+ height: auto;
+display: block;
+}
+
+/*.variation-unavailable{display: none !important;}*/
+
+.alinhinta{
+display: none;}
+
+.GBaseGDPRConsentButtonWrapper{
+display: flex;
+justify-content: center; /* Centers the flex items horizontally */
+  align-items: center;
+}
+
+.GBaseGDPRConsentRefuseButton{
+order: 1;
+}
+
+.GBaseGDPRConsentAcceptButton{
+order: 0;
+}
+
+
+/*Evastebanneri*/
+.GBaseGDPRConsentDialog{
+background-color: #00003c;
+}
+
+.GBaseGDPRConsentDescription, body > div.message-bar.GBaseGDPRConsentDialog > div.GBaseGDPRConsentDescription > p > u > a, .GBaseGDPRConsentTitle{
+color: white;
+}
+
+.GBaseGDPRConsentRefuseButton, .GBaseGDPRConsentAcceptButton{
+background-image: linear-gradient(rgb(37, 92, 204) 10%, rgb(37, 92, 204) 90%) !important;
+color: white;
+}
+
+
+.GBaseGDPRConsentRefuseButton:hover, .GBaseGDPRConsentAcceptButton:hover{
+opacity: .7;
+transition: .3s ease-out;
+}
+
+
+/*Hero bannerin valintanappulat*/
+.flex-control-nav.flex-control-paging li a{border: 1px solid white;}
+
+/*Maavalinta lihavoidut maat*/
+[value="246"], [value="248"], [value="233"], [value="428"], [value="440"], [value="208"], [value="276"], [value="826"], [value="752"], [value="840"], [value="643"], [value="196"], [value="268"], [value="398"]{font-weight: bolder;}
+
+/*WhatsApp*/
+.Footer .NavigationText li a>img {border-radius: 0% !important;}
+
+/*ale-nappi pysymään paikoillaan ostoskorin ristiinmyynnissä*/
+.SlimHotDeal {
+position: relative;
+}
+
+.SlimHotDeal .Tarjous {
+top: 0;
+}
+
+/* kategorioiden nimet normaalilla fontilla. ei bold.*/
+.CategoryList .ListItemCategory h3 a{
+font-weight: Normal  !important;
+}
+.ep-sprite.Icon.TrashIcon{background:
+url(https://www.hockeyunlimited.fi/WebRoot/vilkasfi01/Shops/2014061601/MediaGallery/Crossicon.png) !important;
+background-image:url(https://www.hockeyunlimited.fi/WebRoot/vilkasfi01/Shops/2014061601/MediaGallery/Crossicon.png) !important;}
+.button-style-inherit.ep-js.ep-uiInput.ep-uiInput-button {background-color: red !important;}
+div.menu-container a.RussianFont {font-size: 18px;}
+h3.TopPaddingWide .RussianFont{font-size: 20px;}
+NavigationElement  NavBarElement2 RussianFont a.RussianFont {font-size: 12px !important;}
+
+.ProductRating{display: inline-flex;}
+
+.ProductListImageBox td .FontSmaller{
+display: none;}
+.InfoArea.New p, .ProductDetails.ImgLandscape p {margin: 20px 0 0;
+font-size: 0.8em;}
+
+
+/* UUSI color
+span.NewProduct {background: #00003C !important;
+border-color: #00003C !important;}
+span.NewProduct RussianFont {background: #00003C !important;
+border-color: #00003C !important;}*/
+
+div#NavElement_52714512 { visibility: hidden; }
+
+.HotDeal p.price-value, .ProductListImageBox tbody td p.price-value {display: inline-block; text-align:center;}
+
+
+/* kategorioiden nimet normaalilla fontilla. ei bold.*/
+.ContextBoxHead{
+text-align: center;
+}
+
+img.pelicanssvaa{
+max-width: 100%;
+height: auto;
+}
