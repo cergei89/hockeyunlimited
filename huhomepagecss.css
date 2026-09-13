@@ -1,0 +1,312 @@
+.hualert {
+  padding: 20px;
+  background-color: #f8d7da;
+  border: solid #f1aeb5 1px;
+  border-radius: 15px;
+  color: #f1aeb5;
+}
+
+.huaccordion {
+  background-color: #00003c;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .huaccordion:hover {
+  background-color: #f3f3f3;
+  color: #00003c;
+}
+
+.huaccordion:after {
+  content: '\02795';  /*Unicode character for "plus" sign (+) */
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";  /*Unicode character for "minus" sign (-) */
+}
+
+.hupanel {
+  border-bottom: none;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  margin: 0px 20px 10px 20px;
+  box-sizing: border-box;
+}
+
+.huaccordion.active + .hupanel {
+   border-bottom: solid #00003c 1px;
+   width: calc(100% - 40px);
+   border-radius: 4px;
+}
+
+.huflextitle {
+  grid-column: 1 / -1;      /* span across whole form */
+  text-align: left;
+  color: #00003c;                 /* fill color */
+  font-size: 1.5em;
+  font-weight: 600;
+}
+  .huflexbutton {
+  width: auto;
+  display: inline-block;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+
+  color: white;
+  background: #00003c; /* MUI primary#1976d2;*/
+
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.huflexinput {
+  padding: 14px 12px;
+
+  border-radius: 4px;
+  outline: none;
+
+  transition: border 0.4s ease, box-shadow 0.4s ease;
+
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.2);
+  border:none;
+  padding: 5px 0;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+.hufield {
+  color: white;
+  display: flex;
+  flex-direction: column; /* label on top, input below */
+}
+
+.hufield {
+  color: white;
+  display: flex;
+  flex-direction: column; /* label on top, input below */
+}
+
+#hulabelheight, #hulabelweight{
+  color: #00003c;
+}
+
+.huflexcontainer {
+  background-color: white;
+
+  padding: 20px 20px 10px 20px;
+  border-radius: 8px;
+  border: 1px solid black;
+
+  display: grid;
+  grid-template-columns: 140px 140px auto;
+  gap: 20px;
+  align-items: start;
+
+  width: fit-content;
+  margin: 0;
+}
+
+.huflexresult {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #00003c;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.huflexteksti {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #00003c;                 
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.huflexteksti:empty{
+  display: none;
+}
+
+.huerrorflex{
+  display: none;
+  grid-column: 1 / -1;
+  text-align: center;
+  color: red;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.huerrorflex:empty{
+  display: none;
+}
+
+#hufieldbutton {
+  grid-column: 3;
+  align-self: end;      
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .huflexcontainer {
+    grid-template-columns: 1fr;   
+    gap: 15px;                    
+    width: 90%;                   
+  }
+
+  
+  #hufieldheight,
+  #hufieldweight,
+  #hufieldbutton,
+  .huflexteksti,
+  .huflexresult,
+  .huerrorflex {
+    grid-column: 1 / -1;
+  }
+
+  /* Center the button */
+  #hufieldbutton {
+    justify-content: center;
+    align-self: center;
+  }
+
+  .huflexinput {
+    width: 100%;
+  }
+  .huflextables {
+        display: block;
+    }
+
+    .huflextables table {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.hucenter {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+td {
+  text-align: center;
+}
+th, td {
+  padding: 5px;
+}
+
+.headstyling{
+  background-color: #f3f3f3;
+  border-bottom: solid 2px black;
+}
+.huflextables{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.huflextables strong{
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.huflextables p {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.huflextables p strong {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.huflextables-title {
+    width: 100%;
+    flex-basis: 100%;
+    font-weight: 600;
+    color: #00003c;
+    margin-bottom: 10px;
+}
+/*FAQ Style End*/
+/*Brand slider styles Start*/
+.hubrands-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 3rem 0;
+  background: #fff;
+  /*border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;*/
+}
+
+.hubrands-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 25s linear infinite;
+}
+
+.hubrands-track img {
+  width: auto;
+  height: 50px;
+  max-width: 165px;
+  max-height: 50px;
+  object-fit: contain;
+  margin: 0 3rem;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.hubrands-track img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+.hubrands-track img {
+  width: auto;
+  height: 35px;
+  max-width: 115px;
+  max-height: 35px;
+  object-fit: contain;
+  margin: 0 3rem;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*Brand slider styles End*/
