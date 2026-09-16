@@ -214,3 +214,224 @@ img.pelicanssvaa{
 max-width: 100%;
 height: auto;
 }
+
+
+* {      font-family: 'Montserrat' !important; }
+ h1, h2, h3, h3 a, 
+.menu > ul > li a, 
+.ContextBoxHead span, a.flexslider-text-button,
+button.AddToBasketButton {    font-family: 'Teko' !important; } 
+
+
+/*HU PopUp Style Bonus Start*/
+.hupopparent {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 9999;
+  border-radius: 20px;
+}
+
+
+.hupopcontainer{
+  display: flex;
+  width: 800px;
+  z-index: 998;
+  animation: popupFade 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+@keyframes popupFade {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.hucookiesleft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hucookiesleft{
+  background-color: white;
+  float: left;
+  width: 400px;
+}
+
+.hucookiesContent {
+  width: 400px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 10px 30px 50px;}
+  
+  
+ button#hupopclose.hupopclose {
+    cursor: pointer;
+    font-size: 20px;
+    color: #c0c5cb;
+    align-self: flex-end;
+    background-color: white !important;
+    background: linear-gradient(to bottom, white 10%, white 90%);
+    border: none;
+    margin-bottom: 10px;
+  }
+  img.hupopimg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 30px auto; /
+  }
+  p#hupoptext.hupoptext {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: Bold !important;
+    color: #00003c !important; 
+    margin-bottom: 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  button#hupopaccept.hupopaccept {
+    background-color: #00003c !important;
+    background: linear-gradient(to bottom, #00003c 10%, #00003c 90%);
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px 5px;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0px 6px 18px -5px rgba(0, 0, 3, 1);
+    text-transform: uppercase;
+  }
+
+  #hupopaccept:hover {
+   text-decoration: underline;
+   cursor: pointer;
+  }
+
+@media (max-width: 768px) {
+
+.hutext-top {
+    display: block;
+    font-size: 18px !important; /*22px*/
+    font-weight: 700;
+    color: #00003c;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.hubonuspisteet {
+    display: block;
+    font-size: 48px !important; /*72px*/
+    line-height: 1;
+    font-weight: 900;
+    color: red;
+    margin: 10px 0;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+   .hucookiesleft {
+    display: none;
+  }
+  .hupopcontainer {
+    flex-direction: column;
+    width: 100%;      
+    max-width: 360px; 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  }
+
+
+  .hucookiesContent {
+    width: 100%;
+    padding: 10px;
+  }
+
+.hupopparent {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    width: 100%;   
+    height: auto; 
+    padding: 10px;
+    z-index: 9999;
+  }
+
+   p.hupoptext {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  button#hupopaccept.hupopaccept {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  img.hupopimg {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+.hutext-top {
+    display: block;
+    font-size: 22px; /*22px*/
+    font-weight: 700;
+    color: #00003c;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.hutext-ru{
+    display: block;
+    font-size: 20px; /*22px*/
+    font-weight: 700;
+    color: #00003c;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.hubonuspisteet {
+    display: block;
+    font-size: 72px; /*72px*/
+    line-height: 1;
+    font-weight: 900;
+    color: red;
+    margin: 10px 0;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.hutext-bottom {
+    display: block;
+    font-size: 14px; /*24px*/
+    font-weight: bolder; /*700*/
+    color: #00003c;
+    margin-top: 10px;
+}
+
+.hupoplink {
+    display: inline-block;
+    margin-top: 15px;
+    color: #00003c;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+/*HU PopUp Style Bonus End*/
