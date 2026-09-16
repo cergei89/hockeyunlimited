@@ -1,5 +1,4 @@
 <!-- Non-critical S scripts -->
-/*HU PopUp Script Bonus Start*/
 window.addEventListener('load', function() {huPopupBonus();huRibbon();});
 
 <!-- Smartsupp Start -->
@@ -12,7 +11,8 @@ window.smartsupp||(function(d) {
 	c.src='//www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
 })(document);
 <!-- Smartsupp End -->
-
+	
+/*HU PopUp Script Bonus Start*/
 function huPopupBonus(){
 const hupopupHTML = `<div class="hupopparent" id="hupopparent">
    <div class="hupopcontainer" id="hupopcontainer">
