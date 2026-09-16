@@ -216,13 +216,6 @@ height: auto;
 }
 
 
-* {      font-family: 'Montserrat' !important; }
- h1, h2, h3, h3 a, 
-.menu > ul > li a, 
-.ContextBoxHead span, a.flexslider-text-button,
-button.AddToBasketButton {    font-family: 'Teko' !important; } 
-
-
 /*HU PopUp Style Bonus Start*/
 .hupopparent {
   position: fixed;
