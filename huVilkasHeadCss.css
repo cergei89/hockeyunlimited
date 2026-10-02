@@ -1,1 +1,3262 @@
+/* https://vdtvilkas.b-cdn.net/VDT/master/ThemeRock/VilkasRock.css START*/
+/* Yleiset sivun asetukset */
+.Middle, .ContentArea, .ContentAreaInner, .ContentAreaWrapper {
+    overflow: visible !important;
+}
+#ContentAreaFix, .Div .ContentArea:before {
+    height: auto;
+}
+
+/* ----------- Fontit ----------- */
+.BasketBox span {
+    font-family: inherit !important;
+    font-size: inherit !important;
+}
+.fa-shopping-cart:before {
+    font-family: FontAwesome !important;
+    margin: 0 0.2em;
+}
+.fa, .fas {
+    font-family: FontAwesome !important;
+    font-style: normal !important;
+}
+
+/* cookie-ilmoitus */
+.message-bar.message-cookies {
+    background: #999;
+}
+.message-bar-inner {
+    text-align: center;
+}
+.message-bar-inner a {
+    color: #eee;
+}
+.message-cookies .fa-close-message {
+    border-radius: 5px;
+    width: 50px;
+    background: #000;
+    font-size: 1px;
+    padding-top: 5px;
+    right: 30px;
+    top: 10px;
+}
+a.fa-close-message:before {
+    content: "OK";
+    color: white !important;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+/* Sivuston leveys */
+.NavBarRoof .PropertyContainer, .NavBarTop .PropertyContainer, .Header .PropertyContainer, .NavBarTop, .Middle, .Footer .PropertyContainer {
+    width: auto;
+}
+.Div .ContentArea {
+    margin: 0;
+}
+.GeneralLayout {
+   width: 100%;
+   max-width: 100%;
+   height: 100%;
+   margin: 0px auto 0 auto;
+   overflow: hidden;
+}
+div.NavBarRoof .PropertyContainer, div.Header, div.NavBarTop .PropertyContainer, div.Middle, div.NavBarBottom .PropertyContainer, div.Footer .PropertyContainer {
+   max-width: 1600px !important;
+   margin: auto;
+   width: 100%;
+}
+div.NavBarRoof {
+    width: 100%;
+    min-height: 25px;
+}
+
+/* Roof */
+
+.NavBarRoof.HorizontalNavBar .custom-right .RoofToggle {
+	display: none;
+}
+html body .GeneralLayout .HorizontalNavBar .BasketBox span:first-child {
+    display: inline-block;
+}
+.NavBarRoof p {
+    line-height: 27px;
+}
+
+/* Header */
+.ShopLogo {
+    max-width: 90%;
+}
+.ShopLogo img {
+    max-width: 100%;
+}
+.Div .Header .ShopLogo, .Div .Header .ShopNameSlogan {
+    vertical-align: middle;
+}
+.ShopNameSlogan .ShopNameHead {
+    display: none;
+}
+.Header .ShopSlogan {
+    margin: auto;
+    vertical-align: middle !important;
+}
+.Header .ShopSlogan, .Header .ShopSlogan p {
+    font-size: 20px;
+}
+.SearchForm.horizontal-search .SearchIcon {
+    background-repeat: no-repeat !important;
+}
+.InputField.SearchForm {
+    padding: 0;
+}
+.BasketBox span.hasProducts {
+    display: none !important;
+}
+.basket-txt {
+   	display: block;
+}
+.basket-nbr, .basket-txt {
+   	margin: 0px 2px 1px 2px !important;
+}
+.basket-txt, .basket-nbr, .fa-shopping-cart:before {
+    float: left;
+}
+
+/* Navi */
+.NavBarTop .SizeContainer {
+    width: 100%;
+}
+
+
+/* Etusivu */
+.start-page h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+.start-page hr.Separator {
+    display: none !important;
+}
+
+/* Slider responsiiviseksi */
+.contentslider {
+    margin: 0px auto !important;
+    max-width: 1300px !important;
+}
+.contentslider > ul {
+    width: 100% !important;
+    height: auto !important;
+    padding-bottom: 33%;
+}
+.contentslider > ul > li {
+    width: 100% !important;
+}
+.contentslider > ul > li img {
+    width: 100% !important;
+}
+
+
+/* TuoteryhmÃ¤nostot */
+.start-page .CategoryList .CategoryList {
+    z-index: 100;
+    width: 100%;
+    margin: auto;
+}
+.start-page .ListItemCategory {
+    float: left;
+    margin: 0 0 50px 0;
+    padding: 0;
+    height: 0;
+    padding-top: 30%;
+    background: white;
+    position: relative;
+}
+.start-page .ListItemCategory .ImageArea {
+    margin: 0;
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90%;
+}
+.start-page .ListItemCategory .ImageArea img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.start-page .ListItemCategory .InfoArea h3 {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    background: #f1f1f1 !important;
+}
+.start-page .ListItemCategory .InfoArea h3 a {
+    font-size: 160%;
+}
+.start-page .ListItemCategory .InfoArea p {
+    display: none;
+}
+
+.start-page td.TextLeft, .start-page td.TextRight {
+    width: 100% !important;
+    display: block;
+    float: left;
+}
+div.CategoryList td.TextLeft:nth-of-type(2n) {
+    border-top: 5px #ccc double;
+    margin-top: 25px;
+    padding: 10px 0;
+}
+.start-page .CategoryBaseTable .TextLeft {
+    padding: 0;
+}
+
+/* Tuotelista */
+
+.FacetsToggle {
+   	display: none;
+}
+
+.ContentArea .BreadcrumbItem, .ContentArea .BreadcrumbItem:hover, .ContentArea .BreadcrumbLastItem {
+    font-weight: 100;
+    top: 10px;
+    font-size: 0.8em;
+    color: #999;
+}
+span.fa.fa-angle-right.LeftSmallPadding.RightSmallPadding {
+    display: none;
+}
+a.BreadcrumbItem:after {
+    content: "/";
+    margin: 0 5px;
+}
+table.ProductListImageBox tr td img {
+    max-width: 100% !important;
+}
+table.ProductListImageBox.three-colums-product-list .InfoArea .Description {
+    display: none;
+}
+.PageThis.ClearBoth {
+    display: none;
+}
+.CategoryProducts h3 a, .ListItemCategory .InfoArea h3 a {
+    font-size: 25px;
+}
+.CategoryProducts .ProductListImageBox div.InfoArea  {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.CategoryProducts .ProductListImageBox div.InfoArea .FloatLeft {
+    float: none;
+}
+.CategoryProducts .ProductListImageBox .NewProduct {
+    position: absolute;
+    top: 5px;
+    background: #cccccc30;
+    border: 1px solid #666;
+    padding: 5px;
+    left: 5px;
+    border-radius: 100%;
+}
+.CategoryProducts form {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: inherit;
+    left: 0;
+    height: 55px;
+    padding-bottom: 10px;
+}
+form.AddToBasketForm button.AddToBasketButton::before {
+    content: "\f07a";
+    font-family: FontAwesome !important;
+    margin-right: 10px;
+}
+.ep-uiInput-button.ep-uiSpinner-stepper {
+    border-radius: 30px;
+}
+.ep-uiSpinner-stepper {
+    height: 47px;
+}
+
+
+/* Tuotesivu */
+span.HotPrice {
+    line-height: 200%;
+    padding: 5px 10px;
+    background: #eee;
+    border: 1px dashed #666;
+    border-radius: 0 0 10px 0;
+    font-weight: bold;
+}
+/* Saatavuusilmoitus */
+.ProductDetails a.epGetEmailNotifikation {
+    border: 1px solid;
+    padding: 4px 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.CrossellingCount tr td img, .BundledProductsTable tr td img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.CrossellingCount .CrossellingInfoArea, .BundledProductsTable BundledProductsInfoArea {
+    padding: 25px 0 4px 0;
+}
+.CrossellingInfoArea, .CrossellingInfoArea .FloatLeft, .CrossellingInfoArea .FloatRight {
+    text-align: center !important;
+    width: 100%;
+}
+.CrossellingInfoArea button.ButtonBasket {
+    padding: 5px 10px;
+}
+
+/* Footer */
+/* Fix Vanilla "features" */
+.Footer .NavigationText ul li a + a {
+    margin-left: auto;
+}
+.Footer .ContextBoxBody strong {
+    color: inherit;
+}
+
+.NavBarBottom, .Footer {
+    white-space: normal;
+}
+.Footer .NavigationText ul h3 {
+    margin-bottom: 0;
+}
+.Footer .ContextBoxHead {
+	padding: 0 0 10px 0;
+	line-height: normal !important;
+}
+.Footer .ContextBoxHead span {
+    height: inherit !important;
+    text-align: inherit !important;
+}
+.Footer .BoxContainer .ContextBoxBody, .Footer .NavigationText ul li, .Footer .ContextBox .BoxContainer h3 {
+	margin-bottom: 10px !important;
+}
+.Footer .SizeContainer div {
+	vertical-align: top;
+}
+.Footer .ContextBox {
+    min-width: 200px;
+}
+.Footer .NavigationText img {
+    margin: 10px 15px 0 0;
+}
+
+
+
+/* Desktop */
+@media screen and (max-width: 1200px)
+{
+	/* Reunus, jos ruutu on tÃ¤ysi */
+	.NavBarRoof .PropertyContainer, .Header .PropertyContainer, .ContentArea {
+	    width: 98% !important;
+    	padding: 0 1%;
+	}
+}
+@media screen and (min-width: 900px)
+{
+	/* Header */
+	.ShopLogo {
+    	margin-right: 30px;
+	}
+	/* Etusivu */
+	.start-page .ListItemCategory {
+    	width: 49%;
+    }
+	.start-page .ListItemCategory:nth-child(even) {
+    	margin-right: 2%;
+	}
+
+	/* Tuotelista */
+	.four-colums-product-list div.ImageArea {
+    	line-height: 350px !important;
+	}
+	.four-colums-product-list .ImageArea img {
+	    max-height: 350px;
+    	max-width: 100%;
+	}
+
+	/* Tuotesivu */
+	.ProductDetails .InfoArea {
+		width: 45%;
+	}
+	.ProductDetails .ProductImage {
+		margin: 0;
+		max-width: 50%;
+	}
+	.CrossellingImageArea {
+	    min-height: 300px;
+    	position: relative;
+	}
+	.CrossellingImageArea a {
+    	position: absolute;
+    	left: 50%;
+	    top: 50%;
+    	transform: translate(-50%, -50%);
+	}
+}
+
+/* iPad */
+@media screen and (max-width: 900px)
+{
+/* Roof */
+	.NavBarRoof.HorizontalNavBar .custom-right.Collapsed {
+    	height: 0;
+    	overflow: hidden;
+	}
+	.NavBarRoof.HorizontalNavBar .custom-right  {
+    	height: auto;
+    	padding-right: 10px;
+	}
+	.NavBarRoof.HorizontalNavBar .custom-right .RoofToggle {
+    	display: block;
+    	position: absolute;
+    	right: 0;
+    	top: 5px;
+	}
+	.LocaleFlags a {
+    	margin: 0 7px;
+	}
+	.RoofToggle a {
+    	padding: 3px;
+	    margin: 5px;
+	    font-size: 150%;
+	}
+
+	html body .GeneralLayout .HorizontalNavBar .BasketBox span:first-child {
+    	display: none;
+	}
+	.NavBarRoof p {
+    	line-height: 100%;
+	    font-size: 80%;
+    	padding: 5px;
+	}
+	/* Navi */
+	.NavBarTop.HorizontalNavBar div.SizeContainer {
+		height: auto;
+	 }
+	.NavBarTop .PropertyContainer {
+		height: auto !important;
+	}
+
+/* Head */
+	div.NavBarRoof .PropertyContainer {
+	    height: auto;
+	}
+	.Header .ShopSlogan {
+    	display: none;
+	}
+	/* Etusivu */
+	.start-page .ListItemCategory {
+    	width: 49%;
+    }
+	.start-page .ListItemCategory:nth-child(even) {
+    	margin-right: 2%;
+	}
+
+/* Tuotelista */
+	table.ProductListImageBox tr, table.ProductListImageBox tr {
+    	display: block;
+	}
+	table.ProductListImageBox tr td {
+    	width: 33%;
+	    float: left;
+    	padding: 0;
+	}
+	.ProductListImageBox div.InfoArea {
+	    min-height: 380px;
+    	margin-bottom: 30px;
+	}
+
+
+/* Footer */
+	.Footer .SizeContainer.custom-container.custom-left {
+    	width: 100%;
+	}
+	.Footer .NavigationText {
+    	width: 100%;
+	}
+}
+
+
+/* Mobiili */
+@media screen and (max-width: 600px)
+{
+
+/* Head */
+	.Header .SizeContainer {
+    	padding-top: 10px;
+	}
+	.Header .PropertyContainer {
+    	padding-bottom: 10px !important;
+	}
+	.Header .ShopLogo img {
+    	max-height: 70px;
+	}
+	.basket-txt, .basket-nbr, .fa-shopping-cart:before {
+    	float: left;
+	}
+	/* Piilotetaan nÃ¤ytÃ¤ ostoskori -teksti */
+	.basket-txt {
+    	display: none;
+	}
+	.basket-nbr, .basket-txt {
+    	margin: 2px !important;
+    	font-size: inherit !important;
+	}
+	.Header .BasketBox.NavElementIcon span.fa.fa-shopping-cart {
+    	font-family: inherit !important;
+    	font-size: 0;
+	}
+/* Etusivu */
+	.start-page .CategoryList .CategoryList {
+	    top: 0;
+	}
+	.start-page .ListItemCategory {
+		width: 100%;
+		padding-top: 45%;
+    	margin: 10px 0;
+	}
+	.start-page .ListItemCategory .ImageArea {
+		height: 80%;
+	}
+	.start-page h2 {
+    	margin: 20px 0;
+	}
+
+/* Footer */
+	.Footer .SizeContainer.custom-container.custom-left {
+    	width: 100%;
+	}
+	.Footer .NavigationText {
+    	width: 100%;
+	}
+/* Tuotelista */
+	/* Hakusuodatin */
+	div#RemoteSearchFacets.Collapsed {
+    	height: 40px;
+    	overflow: hidden;
+	}
+	div#RemoteSearchFacets {
+    	height: auto;
+	}
+	.FacetsToggle {
+    	display: block;
+	}
+	.FacetsToggle a {
+	    border: 1px solid;
+    	padding: 3px;
+	    margin: 5px;
+    	display: block;
+    	text-align: center;
+	}
+
+	table.ProductListImageBox tr, table.ProductListImageBox tr {
+    	display: block;
+	}
+	table.ProductListImageBox tr td {
+	    width: 48%;
+    	float: left;
+    	padding: 0;
+	}
+	.ProductListImageBox div.InfoArea {
+    	min-height: 415px;
+	    border-top: 1px solid #f1f1f1;
+    	margin-bottom: 30px;
+	}
+
+	.CategoryProducts button.ep-js.ButtonBasket.AddToBasketButton.ep-uiInput.ep-uiInput-button {
+    	padding: 5px;
+	}
+	/* Piilotetaan teksti napista mobiilissa */
+	.CategoryProducts form.AddToBasketForm  button.AddToBasketButton.ep-js.ButtonBasket.ep-uiInput.ep-uiInput-button {
+	    font-size: 0;
+    	padding: 15px 20px 10px;
+	}
+	.CategoryProducts form.AddToBasketForm  button.AddToBasketButton::before {
+	    margin-right: 0;
+    	font-size: initial !important;
+	}
+
+
+	/* Ennakoiva haku */
+	.de_epages-remotesearchUiSuggest-box {
+		left: 0 !important;
+	}
+
+	/* Tuotelista */
+	/* Piilotetaan mobiilissa juttuja */
+	.CategoryProducts span.ProductNo,
+	.CategoryProducts .InfoArea br,
+	.CategoryProducts .ClearBoth .ClearBoth .ClearBoth {
+		display: none !important;
+	}
+	/* Tuotearviot */
+	#NewRatingTable .SizeContainer {
+		min-width: 300px;
+	}
+	#NewRatingTable .InputLabelling.RightPadding .FloatRight {
+		float: left;
+	}
+	div#NewRatingTable .InputField {
+		width: 100%;
+	}
+	#NewRatingTable textarea.ExtremeLongText, input.ExtremeLongText {
+		width: 300px;
+	}
+
+	/* Tuotesivu */
+	/* Lightbox*/
+	.ep-uiLightbox.ui-dialog.ui-front.ep-uiLightbox-showThumbs {
+		width: 85% !important;
+		left: 5% !important;
+	}
+	.ep-uiLightbox .ep-uiLightbox-thumbs {
+		width: 100%;
+	}
+	.ep-uiLightbox .ep-uiThumbbox.ep-uiThumbbox-list li {
+		width: 50px !important;
+		height: 50px !important;
+		line-height: 50px !important;
+	}
+	.ep-uiLightbox-showThumbs .ep-uiLightbox-slides {
+		right: 0;
+		width: 100%;
+	}
+
+
+
+	/* Ristiinmyynti */
+	.CrossellingCount tr td, .CrossellingCount tr td div {
+		display: block;
+		width: 95%;
+		text-align: center !important;
+	}
+
+	/* Ostoskori */
+	img.ThumbnailsInBasket {
+		display: none;
+	}
+	table.Basket td, table.Basket td a, table.Basket td input {
+		font-size: 85% !important;
+	}
+	td.NoWrap {
+		white-space: normal !important;
+		text-align: center !important;
+	}
+
+	/* Ostoskori, perinteinen tilausprosessi */
+	table.Basket td {
+	    word-break: break-all;
+    	hyphens: auto;
+	}
+	table.productBasketImage tr td {
+    	padding: 0;
+	}
+	.Basket .Money {
+    	white-space: normal;
+	}
+	.BasketSharing .InputBlock .BS-inputLabel, .BasketSharing .InputBlock .InputField {
+		width: 100%;
+		float: left;
+		display: block;
+		padding: 0;
+	}
+	.BasketSharing .InputBlock {
+		display: block !important;
+	}
+	.BasketSharing textarea.BasketSharing-textarea {
+		width: 300px !important;
+		font-size: 75% !important;
+	}
+	.BasketSharing {
+		width: 100%;
+		float: left;
+	}
+	.BasketSharing .Dialog {
+		padding: 0;
+	}
+	.Basket input#CouponCode {
+		width: 95px;
+	}
+	.Basket .ShippingOptionContainer .HalfWidth {
+		width: 100% !important;
+		padding-bottom: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 1022px)
+{
+	.NavBarRoof, .Header, .NavBarTop, .Footer {
+    	width: auto;
+    	padding: 0;
+    }
+
+	 /* EstetÃ¤Ã¤n navigaatioelementtien liikuttelu editorilla mobiilissa */
+	 .NavBarRoof .SizeContainer div, .NavBarTop .SizeContainer div, .Header .SizeContainer div, .Footer .SizeContainer div {
+	    left: auto;
+    	top: auto;
+	}
+
+}
+
+@media only screen and (min-width: 1023px)
+{
+	/* Navi */
+	.NavBarTop {
+		white-space: normal;
+		overflow: visible;
+	}
+	.NavBarTop .PropertyContainer, .NavBarTop .SizeContainer {
+		overflow: visible;
+		height: auto;
+	}
+}
+
+
+/* Basket overlay*/
+div#BasketOverLay span.hasProducts { text-align: center; display: block; padding: 5px 10px 10px; }
+div#BasketOverLay span.fa.fa-shopping-cart { display: none; }
+div#BasketOverLay { border: none !important; margin-top: 0px !important; background: #e0f5c8 !important; left: 0px !important; min-width: 100% !important; position: fixed !important; top: 0px !important;  z-index: 9999999999999 !important; }
+
+div#BasketOverLay {
+            /* for chrome and safari*/
+            -webkit-animation-duration: 1s;
+            -webkit-animation-name: slidein;
+
+            /*for firefox*/
+            -moz-animation-duration: 1s;
+            -moz-animation-name: slidein;
+
+              /* for opera*/
+            -o-animation-duration: 1s;
+            -o-animation-name: slidein;
+
+              /* Standard syntax*/
+            animation-duration: 1s;
+            animation-name: slidein;
+        }
+
+        @-webkit-keyframes slidein {
+            from {
+                margin-top: -30px;
+            }
+
+            to {
+                margin-top: 0px;
+            }
+        }
+
+        @-moz-keyframes slidein {
+             from {
+                margin-top: -30px;
+            }
+
+            to {
+                margin-top: 0px;
+            }
+        }
+         @-o-keyframes slidein {
+            from {
+                margin-top: -30px;
+            }
+
+            to {
+                margin-top: 0px;
+            }
+        }
+          @keyframes slidein {
+             from {
+                margin-top: -30px;
+            }
+
+            to {
+                margin-top: 0px;
+            }
+        }
+
+
+        /* Internet explorer 11+ fixes */
+
+                  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+                     /* IE11+ specific styles go here */
+                     img {
+                       max-width: unset!important;
+                     }
+
+                     .ProductListImageBox tbody {
+                       display: block!important;
+                       text-align: center!important;
+                     }
+
+                     .ProductListImageBox tbody td {
+                       display: inline-block!important;
+                       min-height: 460px!important;
+                     }
+
+                     .ProductListImageBox .InfoArea {
+                       display: block!important;
+                     }
+
+                     .ProductListImageBox .NewProduct, .ListItemProduct .NewProduct, .SlimHotDealTop .NewProduct, .HotDealTopFloatin .NewProduct, .Tarjous {
+                       margin: 0!important;
+                     }
+
+                     .ProductListImageBox.four-colums-product-list tbody td {
+                       min-width: 290px!important;
+                     }
+        /*
+                     .ProductListImageBox.four-colums-product-list .InfoArea {
+                       max-width: 290px!important;
+                     }
+        */
+                     .ProductListImageBox.three-colums-product-list tbody td  {
+                       min-width: 370px!important;
+                     }
+
+                     .ProductListImageBox.three-colums-product-list .InfoArea {
+                       max-width: 370px!important;
+                     }
+
+                     .ProductListImageBox.two-colums-product-list tbody td {
+                       min-width: 570px!important;
+                     }
+
+                     .ProductListImageBox.two-colums-product-list .InfoArea {
+                       max-width: 570px!important;
+                     }
+
+                     div.NavBarBottom .PropertyContainer {
+                       margin: 0px!important;
+                     }
+
+                     .CrossellingCount tbody {
+                       display: block!important;
+                     }
+
+                     .CrossellingCount tbody td {
+                       display: inline-block!important;
+                       width: 20%!important;
+                       min-width: 200px!important;
+                     }
+
+                     .ProductDetails .InfoArea {
+                       min-width: 300px!important;
+                     }
+
+                  }
+
+                  @media screen and (-ms-high-contrast: active) and (max-width: 700px), screen and (-ms-high-contrast: none) and (max-width: 700px) {
+                    .ProductListImageBox.three-colums-product-list tbody td,
+                    .ProductListImageBox.two-colums-product-list tbody td,
+                    .ProductListImageBox.four-colums-product-list tbody td
+                     {
+                      min-width: 100px!important;
+                    }
+
+                    .CrossellingCount tbody {
+                      text-align: center!important;
+                    }
+
+                  }
+                  @media screen and (min-width: 700px) {
+                      .four-colums-product-list td {
+                          width: 23% !important;
+                      }
+                   }
+
+                  @media screen and (max-width: 500px) {
+                    .MultipleStep-Container .Header {
+                      flex-direction: row!important;
+                    }
+                  }
+
+                  @media screen and (-ms-high-contrast: active) and (max-width: 400px), screen and (-ms-high-contrast: none) and (max-width: 400px) {
+                    .ProductListImageBox tbody td {
+                      margin: 0 auto!important;
+                      text-align: center!important;
+                  	}
+
+                    .two-colums-product-list .ImageArea img,
+                    .three-colums-product-list .ImageArea img,
+                    .four-colums-product-list .ImageArea img {
+                      width: 100%!important;
+                    }
+                  }
+        /* Internet explorer 11+ fixes  end */
+
+
+/* Ver 1.1 - Ristiinmyynnin tuotteiden asettelua, tuotelistan korjaus (kuvat venyi tietysÃ¤ tilanteessa) */
+/* Ver 1.2 - Tuotekuvien korjausta lisÃ¤Ã¤, megamenun js:n pÃ¤ivitys, Yhteensopivuus IE:n kanssa parannettu */
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/ThemeRock/VilkasRock.css END*/
+
+
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/SnippetMegamenu/Megamenu.css START*/
+
+
+/* 
+- Name: megamenu.js - style.css
+- Version: 1.0
+- Latest update: 29.01.2016.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+
+
+
+
+/* â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“
+Screen style's
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.menu-container {
+    width: 100% !important;
+    margin: 0 auto;
+    text-align: left;
+    background: inherit;
+}
+
+.menu-mobile {
+    display: none;
+    padding: 20px;
+}
+
+.menu-mobile:after {
+    content: "\f0c9";
+    font-family: "FontAwesome";
+    font-size: 2.5rem;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: 50%;
+/*     -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%); */
+}
+
+.menu-dropdown-icon:before {
+    content: "\f0fe";
+    font-family: "FontAwesome";
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 1.5em 2em;
+    background: #fff;
+    color: #333;
+}
+/* .normal-sub:before {
+    content: "\f0c8";
+    font-family: "FontAwesome";
+    display: block;
+    cursor: pointer;
+    float: right;
+    padding: 1.5em 2em;
+    background: #fff;
+    color: #333;
+}*/
+
+.menu > ul {
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+    box-sizing: border-box;
+}
+
+.menu > ul:before,
+.menu > ul:after {
+    content: "/f146";
+    font-family: "FontAwesome";
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 1.5em 2em;
+    background: #fff;
+    color: #333;
+}
+
+.menu > ul:after {
+    clear: both;
+}
+
+.menu > ul > li {
+    float: left;
+    background: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > ul > li a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: block;
+}
+
+.menu > ul > li:hover {
+    background: #f0f0f0;
+}
+
+.menu > ul > li > ul {
+    display: none;
+    width: 100%;
+    background: #f0f0f0;
+    padding: 20px !important;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul > li > ul:after {
+    clear: both;
+}
+
+.menu > ul > li > ul > li {
+    margin: 0;
+    padding-bottom: 0;
+    list-style: none;
+    width: 25%;
+    background: none;
+    float: left;
+}
+
+.menu > ul > li > ul > li a {
+    color: #777;
+    padding: .2em 0;
+    width: 95%;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    font-size: 90%;
+}
+
+.menu > ul > li > ul > li > ul {
+    display: block;
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul > li > ul > li > ul:after {
+    clear: both;
+}
+
+.menu > ul > li > ul > li > ul > li {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    font-size: .8em;
+}
+
+.menu > ul > li > ul > li > ul > li a {
+    border: 0;
+}
+
+.menu > ul > li > ul.normal-sub {
+    width: 300px;
+    left: auto;
+    padding: 10px 20px;
+}
+
+.menu > ul > li > ul.normal-sub > li {
+    width: 100%;
+}
+
+.menu > ul > li > ul.normal-sub > li a {
+    border: 0;
+    padding: 1em 0;
+}
+
+
+/* â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“
+Mobile style's
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+@media only screen and (max-width: 959px) {
+    .menu-container {
+        width: 100% !important;
+        text-align: left;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .menu-dropdown-icon:before {
+        display: block;
+    }
+    .menu > ul {
+        display: none;
+    }
+    .menu > ul > li {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .menu > ul > li a {
+        padding: 1.5em;
+        width: auto;
+        display: block;
+        font-size: inherit;
+    }
+    .menu > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul.normal-sub {
+        width: 100%;
+    }
+    .menu > ul > li > ul > li {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .menu > ul > li > ul > li:first-child {
+        margin: 0;
+    }
+    .menu > ul > li > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul > li > ul > li {
+        float: none;
+    }
+    .menu .show-on-mobile {
+        display: block;
+    }
+}
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/SnippetMegamenu/Megamenu.css END*/
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/SnippetFlexslider/flexslider.css STARt*/
+/*
+ * jQuery FlexSlider v2.7.1
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+/* @font-face {
+  font-family: 'flexslider-icon';
+  src: url('fonts/flexslider-icon.eot');
+  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover {
+  outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+* html .flexslider .slides {
+  height: 1%;
+}
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0 0 60px;
+  background: #fff;
+  /* border: 4px solid #fff; */
+  position: relative;
+  zoom: 1;
+  /* -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2); */
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.flexslider .slides img {
+  height: auto;
+  -moz-user-select: none;
+}
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.loading .flex-viewport {
+  max-height: 300px;
+}
+@-moz-document url-prefix() {
+  .loading .flex-viewport {
+    max-height: none;
+  }
+}
+.carousel li {
+  margin-right: 5px;
+}
+.flex-direction-nav {
+  *height: 0;
+}
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+  opacity: 0!important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+}
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+.flex-pauseplay a.flex-play:before {
+  content: '\f003';
+}
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+.flex-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/SnippetFlexslider/flexslider.css END*/
+
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/SnippetFlexslider/flexslider-custom.css START*/
+
+/* Count the combined height of navigation elements and subtract it from 100vh */
+.extraBnr {
+  height: calc(100vh - 200px)!important;
+  min-height: 400px!important;
+  max-height: 600px!important;
+}
+
+/* Make the slider use font awesome icons as navigation */
+.flex-direction-nav a {
+  height: 23px!important;
+}
+
+.flex-control-nav {
+  bottom: 0!important;
+}
+
+.flex-direction-nav a:before {
+  font-family: FontAwesome!important;
+}
+
+.flex-direction-nav a:before {
+  content: "\f104"!important;
+}
+
+.flex-direction-nav a.flex-next:before {
+  content: "\f105"!important;
+}
+
+/* Position the background image and center items with flexbox */
+.flexslider .slides > li {
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: flex!important;
+  -webkit-backface-visibility: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+}
+
+/* Give everything full height and remove padding and margin */
+.extraBnr,
+.flexslider .slides,
+.flex-viewport {
+    height: 100%;
+}
+
+ul.slides {
+  margin: 0;
+  padding: 0;
+}
+
+.flexslider {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  overflow: hidden;
+}
+
+/* Text content full width, better for mobile */
+.flexslider .flexslider-text {
+  width: 100%;
+  padding: 0px 10px;
+}
+
+/* Colors and button styles */
+.flexslider .flexslider-text h1, .flexslider .flexslider-text h2, .flexslider .flexslider-text h3, .flexslider .flexslider-text p, .flexslider .flexslider-text span {
+  color: white;
+}
+
+.flexslider .flexslider-text-button {
+  display: inline-block;
+  margin-top: 32px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 16px 32px;
+  transition: 100ms ease-in-out;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.flexslider-text-button:hover {
+  background-color: grey;
+
+.flex-control-paging li a {
+  padding: 0;
+}
+
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/SnippetFlexslider/flexslider-custom.css END*/
+
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/SnippetSlickslider/slick.css START*/
+
+
+  /* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/SnippetSlickslider/slick.css END*/
+
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/SnippetSlickslider/slick-theme.css STARt*/
+
+@charset 'UTF-8';
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0 !important;
+    line-height: 0 !important;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent !important;
+    border: none;
+    background: transparent;
+    z-index: 999;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: FontAwesome;
+    font-size: 28px;
+    line-height: 1;
+    opacity: .6;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: 0;
+}
+[dir='rtl'] .slick-prev
+{
+    right: 0;
+    left: auto;
+}
+ .slick-prev:before
+{
+    content: "\f053";
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: "\f054"}
+
+.slick-next
+{
+    right: 0;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: 0;
+}
+
+.slick-next:before
+{
+    content: "\f054"}
+}
+[dir='rtl'] .slick-next:before
+{
+    content: "\f053";
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: "\f111"; /* circle */
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+
+.slick-slide img {
+    margin: auto;
+		width: auto !important;
+		height: auto !important;
+}
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/SnippetSlickslider/slick-theme.css END*/
+
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/hockeyunlimited.fi/hockeyunlimited.css START*/
+.extraBnr {
+    height: auto!important;
+    max-height: unset!important;
+    min-height: unset!important
+}
+
+a:link {
+    color: inherit
+}
+
+p,
+span {
+    line-height: 180%
+}
+
+hr.separator {
+    border-width: 0!important
+}
+
+.message-bar.message-cookies {
+    background: #00003c
+}
+
+.message-bar.message-cookies * {
+    color: #fff!important;
+    text-align: center
+}
+
+.message-bar.message-cookies button {
+    color: #fff!important;
+    background: #255ccc;
+    transition: .3s ease-out
+}
+
+.message-bar.message-cookies button:hover {
+    opacity: .7;
+    transition: .3s ease-out
+}
+
+MultipleStep-Container span,
+MultipleStep-Container p {
+    line-height: 140%!important
+}
+
+.TrashIcon {
+    background: url(/WebRoot/StoreTypes/7.31.0/VilkasStore/SF/Icon/WireframeWhite/xico_s_remove_item.png.pagespeed.ic.DoDGLqs3mT.png)!important
+}
+
+.ShoppingListIcon {
+    background: url(/WebRoot/StoreTypes/7.31.0/VilkasStore/SF/Icon/WireframeWhite/xico_s_shoppinglist.png.pagespeed.ic.XYISGa4qXT.png)!important
+}
+
+.Header .ShopName,
+.Header .ShopSlogan {
+    display: none!important
+}
+
+#ContinueShoppingButton {
+    display: none!important
+}
+
+.ep-uiInput-button,
+.CustomButton {
+    background: #00003c!important;
+    color: #fff!important
+}
+
+.CheckOutNav li.done a {
+    color: #fff!important
+}
+
+.MultipleStep-Container .ep-uiInput-select {
+    width: 174px
+}
+
+.ep-uiInput-button:hover,
+.CustomButton:hover {
+    background: #255ccc!important
+}
+
+.SearchToggle {
+    display: none!important
+}
+
+.SearchToggle a:before {
+    content: "\f002";
+    font-family: fontawesome!important;
+    font-size: 30px;
+    color: #fff
+}
+
+.menu>ul>li {
+    color: #fff!important
+}
+
+.menu {
+    color: #fff!important
+}
+
+.menu>ul>li a:active,
+.menu>ul>li a:focus,
+.menu>ul>li a:focus-within {
+    color: #000!important;
+    background: #fff!important
+}
+
+menu>ul>li>a:active::after,
+.menu>ul>li>a:focus::after,
+.menu>ul>li>a:focus-within::after {
+    border-color: #255ccc!important
+}
+
+.menu>ul>li>a {
+    position: relative;
+    padding: 6px 15px;
+    color: #fff!important
+}
+
+.menu>ul>li:hover,
+.menu>ul>li:active,
+.menu>ul>li:focus {
+    background: #fff!important
+}
+
+.menu>ul>li:hover>a,
+.menu>ul>li:active>a,
+.menu>ul>li:focus>a {
+    color: #000!important
+}
+
+.menu>ul>li:hover>a:after,
+.menu>ul>li:active>a:after,
+.menu>ul>li:focus>a:after {
+    border-color: #255ccc;
+    transform: scaleX(1)
+}
+
+.menu>ul>li>a:hover {
+    background: #fff!important
+}
+
+.menu>ul>li:hover {
+    background: transparent
+}
+
+.menu>ul>li>ul {
+    background: #fff;
+    padding: 0!important;
+    border: 1px solid #00003c
+}
+
+.menu>ul>li>ul>li {
+    padding: 0;
+    margin: 5px!important;
+    width: calc(25% - 10px);
+    box-sizing: border-box
+}
+
+.menu>ul>li>ul>li>ul>li a:hover {
+    transition: .3s ease-out
+}
+
+.menu>ul>li>ul>li>a {
+    border-bottom: 2px solid #002d72;
+    font-weight: bold
+}
+
+.menu>ul>li>ul>li>a:hover {
+    text-decoration: underline
+}
+
+.menu>ul>li>ul>li a:hover {
+    border-color: #00003c;
+    transition: .3s ease-out;
+    font-weight: bold
+}
+
+.menu>ul>li>ul.normal-sub>li {
+    margin: 0!important;
+    border-bottom: 0!important;
+    width: 100%
+}
+
+.menu>ul>li>ul>li a {
+    padding: 6px 15px!important;
+    width: calc(100% - 10px);
+    box-sizing: border-box;
+    color: #000!important;
+    margin: 0 5px
+}
+
+.menu>ul>li>a:after {
+    transition: transform .3s ease-out, border-color .3s ease-out;
+    position: absolute;
+    display: block;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    content: "";
+    padding-bottom: inherit;
+    border-top: 2px solid #000
+}
+
+.menu li>a:hover:after {
+    border-color: #255ccc;
+    transform: scaleX(1)
+}
+
+.ContentArea .BreadcrumbItem,
+.ContentArea .BreadcrumbItem:hover,
+.ContentArea .BreadcrumbLastItem {
+    color: #000;
+    position: relative;
+    top: 0
+}
+
+.SearchForm.horizontal-search>input {
+    padding: 10px 30px 10px 10px;
+    background: #fff
+}
+
+.CrossellingCount tr td img,
+.BundledProductsTable tr td img {
+    max-height: 200px;
+    width: auto
+}
+
+div.CrossellingImageArea,
+div.BundledProductsImageArea {
+    height: 200px;
+    line-height: 200px
+}
+
+.CrossellingCount tr td {
+    padding-bottom: 50px
+}
+
+.CrossellingCount button.ButtonBasket {
+    display: none!important
+}
+
+#ProductSlideshow {
+    max-height: 600px;
+    height: 600px;
+    max-width: 600px
+}
+
+.ProductDetails {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    margin: 80px 0
+}
+
+.ProductDetails .ProductImage {
+    width: 50%
+}
+
+.AdditionalLinks.New li,
+.AdditionalLinks.New {
+    margin-bottom: 0
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    min-width: 200px;
+    text-align: center
+}
+
+.PriceContainer {
+    padding: 0;
+    background: #fff
+}
+
+.price-value,
+.HotDeal .price-value {
+    font-size: 24px;
+    color: #00003c
+}
+
+button,
+input,
+textarea,
+select,
+.ep-uiInput,
+.InputField.SearchForm {
+    border-color: #00003c
+}
+
+.ProductDetails .PriceContainer .Price {
+    margin-bottom: 15px
+}
+
+.ProductDetails .PriceContainer .price-value {
+    font-size: 30px
+}
+
+.HotDeal .InfoArea a {
+    font-family: 'Teko'!important;
+    font-size: 22px!important
+}
+
+.ProductDetails .InfoArea {
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    height: fit-content
+}
+
+.AddToBasketButton[type="submit"],
+.Customizable button {
+    background: #255ccc
+}
+
+.NavBarBottom {
+    border-top: 1px solid
+}
+
+.Div .Middle {
+    box-sizing: border-box
+}
+
+.NavBarRoof {
+    border-bottom: 1px solid #e8e8ef
+}
+
+div.NavBarRoof .PropertyContainer {
+    justify-content: flex-end
+}
+
+.NavBarTop .PropertyContainer,
+.NavBarTop .SizeContainer {
+    height: auto
+}
+
+.NavBarBottom img {
+    margin: 10px 25px;
+    max-width: 100%
+}
+
+.NavBarBottom .NavigationText {
+    margin: 0;
+    padding: 0
+}
+
+.ep-2-click-button.DisplayInlineBlock {
+    padding: 0 1px;
+    border-radius: 50%!important;
+    box-sizing: border-box
+}
+
+.ep-2-click-button span {
+    background: none!important
+}
+
+.SelectLabelling {
+    display: none
+}
+
+.SelectVariation .SelectLabelling {
+    display: block
+}
+
+div.Footer .PropertyContainer {
+    display: flex;
+    justify-content: center
+}
+
+.Footer a,
+.Footer * {
+    font-size: 14px;
+    text-transform: uppercase
+}
+
+td.transparent-background {
+    display: none!important
+}
+
+.show-facets .ProductListImageBox.four-colums-product-list div.ImageArea {
+    line-height: 180px!important
+}
+
+.Middle .ContentAreaWrapper>.RemoteSearchFacets,
+.Middle .ContentAreaWrapper .CategoryList>.RemoteSearchFacets {
+    width: 280px
+}
+
+.RemoteSearchFacet a,
+.RemoteSearchFacet label {
+    font-size: 16px;
+    font-weight: bold
+}
+
+.CategoryList .CategoryList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.CategoryList .ListItemCategory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: unset;
+    min-width: 90px;
+    margin: 10px
+}
+
+.ListItemCategory .InfoArea h3 {
+    text-align: center;
+    min-width: unset;
+    color: #fff!important
+}
+
+.CategoryList .ListItemCategory a:hover {
+    background: #2058cf;
+    transition: .4s ease-out
+}
+
+.CategoryList .ListItemCategory h3 a {
+    color: #fff!important;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #00003c;
+    text-transform: uppercase;
+    display: block
+}
+
+.start-page .CategoryList .ListItemCategory h3 a {
+    background: #fff;
+    color: #00003c!important
+}
+
+.start-page .CategoryList .ListItemCategory h3 a:hover {
+    background: #fff;
+    color: #00003c;
+    transition: .3s ease-out
+}
+
+.start-page .ListItemCategory .ImageArea img {
+    object-fit: unset!important;
+    height: auto!important
+}
+
+.four-colums-product-list .epWidth75.epWidth-4 {
+    display: none!important
+}
+
+.ProductListImageBox div.ImageArea {
+    overflow: hidden!important
+}
+
+.ProductListImageBox div.ImageArea img:hover {
+    transition: .5s ease-in-out;
+    transform: scale(1.2)
+}
+
+.ProductListImageBox div.ImageArea img {
+    transition: .5s ease-in-out
+}
+
+.ep-uiMagnifier-box>div>img,
+.ep-uiMagnifier-zoom>div>img {
+    bottom: unset
+}
+
+.Footer .NavigationText {
+    width: 100%
+}
+
+#NavElement_40949911,
+.Footer .NavigationText ul {
+    width: 50%
+}
+
+#NavElement_40949907,
+#NavElement_40949909 {
+    width: 25%
+}
+
+.Footer .SizeContainer.custom-container.custom-left {
+    width: 100%;
+    padding: 0 20px!important;
+    box-sizing: border-box
+}
+
+html body .GeneralLayout .HorizontalNavBar .BasketBox {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.start-page .CategoryProducts {
+    padding-bottom: 50px
+}
+
+.SlimHotDealTop .NewProduct,
+.HotDealTopFloatin .NewProduct,
+.ProductDetails .NewProduct,
+.CategoryProducts .ProductListImageBox .NewProduct {
+    border: 2px solid #255ccc;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px;
+    min-width: 60px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-radius: 0;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background: #255ccc;
+    font-size: 13px;
+    color: #fff
+}
+
+.Tarjous {
+    border: 2px solid red;
+    height: 30px;
+    width: 30px;
+    background: red;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 2px 5px;
+    text-align: center;
+    margin: 0;
+    top: 36px;
+    color: #fff!important;
+    min-width: 60px;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 13px!important;
+    left: 0;
+    z-index: 99
+}
+
+div#BasketOverLay {
+    background: #255ccc!important
+}
+
+div#BasketOverLay * {
+    color: #fff!important
+}
+
+div#BasketOverLay span:nth-child(1):before {
+    content: "\f07a";
+    font-family: fontawesome;
+    font-size: 20px
+}
+
+.ProductListImageBox div.ImageArea img {
+    max-width: 80%
+}
+
+.HotDeal .InfoArea a {
+    font-size: 16px;
+    white-space: initial;
+    padding: 0 5px;
+    box-sizing: border-box
+}
+
+div.CategoryList td.TextLeft:nth-of-type(2n) {
+    border-top: 0!important
+}
+
+.HotDealList {
+    margin-top: 40px
+}
+
+.HotDealList .FontSmaller {
+    font-size: .80em!important
+}
+
+.HotDealList h3 {
+    height: 72px;
+    overflow: hidden
+}
+
+.HotDeal {
+    position: relative
+}
+
+.four-colums-product-list td {
+    min-height: 650px
+}
+
+.flexslider {
+    border-width: 0!important
+}
+
+.flexslider .slides img {
+    max-width: 1920px;
+    margin: 0 auto
+}
+
+.flex-control-nav {
+    bottom: 20px!important
+}
+
+.flex-control-paging li a:hover,
+.flex-control-paging li a.flex-active {
+    background: red!important
+}
+
+.flex-control-paging li a {
+    width: 30px!important;
+    height: 30px!important;
+    background: #00003c!important
+}
+
+.SearchElement {
+    margin-top: 0
+}
+
+.start-page .CategoryList .ListItemCategory .InfoArea {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff!important
+}
+
+.start-page .CategoryList .ListItemCategory {
+    margin: 20px;
+    width: calc(50% - 40px);
+    margin-bottom: 80px;
+    min-width: 600px;
+    text-align: center;
+    overflow: hidden
+}
+
+.start-page .ListItemCategory .InfoArea h3 {
+    padding-top: 0!important;
+    background: #fff !important;
+    border-bottom: none;
+}
+
+.CategoryProducts form {
+    padding-bottom: 0;
+    height: auto
+}
+
+.Footer .NavigationText li a>img {
+    border-radius: 50%
+}
+
+.Footer .NavigationText img:hover {
+    opacity: .8
+}
+
+.Footer h3,
+.Footer .ContextBoxHead span {
+    font-size: 30px!important
+}
+
+.start-page td.TextLeft,
+.start-page td.TextRight {
+    margin: 0!important;
+    padding: 0!important
+}
+
+.FourPoints {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px
+}
+
+.FourPointsInner {
+    width: 25%;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.FourPointsInner h3 {
+    font-weight: bold;
+    margin-bottom: 0
+}
+
+.FourPointsInner p {
+    font-weight: bold;
+    text-align: center
+}
+
+.FourPointsInner:nth-child(1):before {
+    display: block;
+    margin: 0 auto;
+    content: "\f0d1";
+    font-family: fontawesome;
+    background-size: cover;
+    font-size: 60px;
+    color: #00003c;
+    margin-bottom: 40px
+}
+
+.FourPointsInner:nth-child(2):before {
+    display: block;
+    color: #00003c;
+    content: "\f2b7";
+    font-family: fontawesome;
+    margin: 0 auto;
+    background-size: cover;
+    font-size: 60px;
+    margin-bottom: 40px
+}
+
+.FourPointsInner:nth-child(3):before {
+    display: block;
+    margin: 0 auto;
+    content: "\f0ec";
+    font-family: fontawesome;
+    background-size: cover;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #00003c
+}
+
+.FourPointsInner:nth-child(4):before {
+    display: block;
+    margin: 0 auto;
+    content: "\f0ac";
+    font-family: fontawesome;
+    background-size: cover;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #00003c
+}
+
+.ContentArea .ContentAreaWrapper>a.LinkPrintView {
+    display: none!important
+}
+
+.epWidth50.epWidth-4,
+.ep-uiInput-button.ep-uiSpinner-stepper {
+    display: none!important
+}
+
+.ui-slider .ui-slider-range {
+    background: #fff
+}
+
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    background: #2058cf
+}
+
+.ContentArea button.AddToBasketButton {
+    border: 2px solid #255ccc;
+    width: 100%!important;
+    box-sizing: border-box;
+    background: #fff!important;
+    color: #000!important;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 20px!important;
+    padding: 8px
+}
+
+.ContentArea button.AddToBasketButton:hover {
+    background: #255ccc!important;
+    transition: .4s ease-out;
+    color: #fff!important
+}
+
+.ShowVariations button.AddToBasketButton {
+    background: #fff!important;
+    border: 2px solid #255ccc
+}
+
+.ShowVariations button.AddToBasketButton:before {
+    content: "\f1de";
+    font-family: fontawesome;
+    margin-right: 10px
+}
+
+.ShowVariations button.AddToBasketButton:hover {
+    background: #255ccc!important;
+    transition: .4s ease-out;
+    color: #fff!important
+}
+
+.ProductDetails button.AddToBasketButton {
+    background: #255ccc!important;
+    color: #fff!important;
+    max-width: 250px;
+    font-size: 20px!important
+}
+
+.ProductDetails button.AddToBasketButton:hover {
+    background: #00003c!important;
+    transition: .4s ease-out
+}
+
+table.SelectVariation tr {
+    height: auto
+}
+
+.PriceContainer .SelectVariation,
+.PriceContainer .SelectVariation td,
+.PriceContainer .SelectVariation th,
+.PriceContainer .SelectVariation tr {
+    display: block
+}
+
+table.SelectVariation {
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+.ImgLeft .ProductImage {
+    margin: 0!important
+}
+
+.ep-uiCustomizer-inputSelected input,
+.ep-uiCustomizer-inputSelected .ep-uiInput-button,
+.ep-uiCustomizer-inputSelected textarea,
+.ep-uiCustomizer-canvasHover,
+.ep-uiCustomizer-fontColor li.selectedColor,
+canvas.ep-uiCustomizer-canvasSelected,
+.ep-uiThumbbox ul li.active {
+    border: 1px solid #255cce!important;
+    box-shadow: unset
+}
+
+.ProductListImageBox.four-colums-product-list div.ImageArea {
+    border-bottom: 1px solid #e2e2e2
+}
+
+.ContentArea button,
+.ContentArea .LoginButton,
+.ContentArea .ep-uiInput-button {
+    background: #00003c!important;
+    color: #fff!important
+}
+
+.ShopSlogan {
+    display: none!important
+}
+
+.ShopLogo img {
+    max-width: 500px
+}
+
+#AddContainerItemsToShoppingListForm736391>button {
+    padding: 7px 15px
+}
+
+.ProductListImageBox div.InfoArea {
+    padding: 0;
+    box-sizing: border-box
+}
+
+.menu-dropdown-icon:before {
+    width: 47px;
+    height: 47px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #255ccc
+}
+
+.ProductListImageBox tr td {
+    padding-bottom: 80px
+}
+
+.ProductRating form {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.ProductRatingDisabledIcon,
+.ProductRatingDisabledIconSmall {
+    background: none!important;
+    height: 0;
+    width: 22px
+}
+
+.ProductRatingDisabledIcon:after,
+.ProductRatingDisabledIconSmall:after {
+    content: "\f006";
+    font-family: fontawesome!important;
+    color: #255ccc!important;
+    font-size: 20px!important;
+    font-style: initial
+}
+
+.ProductRatingEnabledIcon,
+.ProductRatingEnabledIconSmall {
+    background: none!important;
+    height: 0;
+    width: 22px
+}
+
+a.productRatingStars,
+a.productRatingStars {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center
+}
+
+.ProductRatingEnabledIcon:after,
+.ProductRatingEnabledIconSmall:after {
+    content: "\f005";
+    font-family: fontawesome!important;
+    color: #255ccc!important;
+    font-size: 20px!important;
+    font-style: initial
+}
+
+.start-page .ListItemCategory .ImageArea {
+    height: 100%
+}
+
+@media screen and (min-width:1200px) {
+    .Div .Middle {
+        padding: 15px 15px 50px 15px
+    }
+}
+
+@media screen and (max-width:1200px) {
+    table.ProductListImageBox tr td {
+        width: 33%;
+        box-sizing: border-box;
+        padding: 10px;
+        float: left
+    }
+    .basket-txt {
+        display: none!important
+    }
+    table.ProductListImageBox tr,
+    table.ProductListImageBox tr {
+        display: block
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .Footer.HorizontalNavBar .SizeContainer.custom-container.custom-right,
+    .Footer.HorizontalNavBar .SizeContainer.custom-container.custom-left {
+        width: auto
+    }
+    .Footer .SizeContainer.custom-container.custom-left {
+        padding: 0 10px!important
+    }
+    .Footer .ContextBox .ContextBoxHead span,
+    .Footer .ContextBox .ContextBoxHead h1 {
+        text-align: center!important
+    }
+    #NavElement_40949911,
+    .Footer .NavigationText ul,
+    #NavElement_40949907,
+    #NavElement_40949909 {
+        width: 100%!important;
+        margin-bottom: 50px!important
+    }
+    div.BoxContainer {
+        margin-bottom: 30px
+    }
+}
+
+@media screen and (max-width:959px) {
+    .InputField.SearchForm>button {
+        position: absolute;
+        right: 0
+    }
+    .SearchForm.horizontal-search>input {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        height: 50px;
+        background: #fff;
+        border-radius: 0
+    }
+    .SearchForm.horizontal-search .SearchIcon {
+        width: 50px;
+        height: 50px;
+        background: none!important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none!important
+    }
+    .SearchForm.horizontal-search .SearchIcon:before {
+        font-family: fontawesome!important;
+        content: "\f002";
+        font-size: 25px;
+        color: #000
+    }
+    .SearchElement.Collapsed {
+        height: 0;
+        overflow: hidden;
+        border-bottom: 0;
+        visibility: hidden
+    }
+    .SearchToggle {
+        display: initial!important;
+        position: absolute;
+        top: 10px!important;
+        left: 10px!important;
+        z-index: 99
+    }
+    .de_epages-remotesearchUiSuggest-box {
+        width: 100%!important
+    }
+    .de_epages-remotesearchUiSuggest-box ul {
+        max-width: 100%!important
+    }
+    .SearchElement {
+        visibility: hidden;
+        height: auto;
+        transition: all 300ms linear;
+        position: absolute;
+        left: 0!important;
+        width: 100%!important;
+        background: #fff;
+        display: flex!important;
+        align-items: center;
+        z-index: 99;
+        top: 50px!important;
+        text-align: center;
+        justify-content: center
+    }
+    .InputField.SearchForm {
+        width: 90%
+    }
+    .InputField.SearchForm>input:focus {
+        border-bottom: 0!important;
+        width: 100%;
+        box-shadow: none!important
+    }
+    .HorizontalNavBar .SearchElement form {
+        margin: 0;
+        width: 100%!important
+    }
+    .FacetsToggle a {
+        font-weight: bold!important;
+        color: #fff!important
+    }
+    .menu>ul>li>ul>li:first-child {
+        margin: 0!important
+    }
+    .FacetsToggle {
+        margin: 0 auto;
+        max-width: 400px;
+        width: auto
+    }
+    .RemoteSearchFacets.ContextBox.Collapsed .FacetsToggle {
+        background: #255ccc!important
+    }
+    .RemoteSearchFacets.ContextBox .FacetsToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff!important;
+        background: #00003c!important;
+        height: 40px;
+        margin: 0 10px 10px
+    }
+    div#RemoteSearchFacets.Collapsed {
+        height: 40px;
+        overflow: hidden
+    }
+    .Middle .ContentAreaWrapper>.RemoteSearchFacets,
+    .Middle .ContentAreaWrapper .CategoryList>.RemoteSearchFacets {
+        width: 100%
+    }
+    .ShopLogo img {
+        max-width: 100%
+    }
+    .menu>ul>li>ul>li a {
+        width: calc(100% - 30px);
+        margin: 0 15px
+    }
+    .menu>ul>li>ul>li {
+        width: 100%
+    }
+    .menu-mobile {
+        color: #fff!important;
+        font-size: 0!important;
+        padding: 10px
+    }
+    .menu>ul>li>a {
+        box-sizing: border-box
+    }
+    .menu-dropdown-icon:before {
+        padding: 7px;
+        position: absolute;
+        right: 0;
+        z-index: 999
+    }
+    .menu>ul>li>a:hover {
+        background: none!important
+    }
+}
+
+@media screen and (max-width:900px) {
+    table.ProductListImageBox tr td .ImageArea img {
+        width: auto!important
+    }
+    .FourPoints {
+        flex-wrap: wrap
+    }
+    .FourPointsInner {
+        width: 50%
+    }
+    table.ProductListImageBox tr td {
+        width: 50%;
+        padding: 15px
+    }
+    .ProductDetails .InfoArea {
+        border-width: 0
+    }
+    .ProductDetails {
+        flex-wrap: wrap;
+        flex-direction: column-reverse
+    }
+    .ProductDetails .ProductImage {
+        width: 100%
+    }
+    .ImgLeft .InfoArea,
+    .ImgRight .InfoArea {
+        width: auto
+    }
+    div.BasketSharing>div>div.InputBlock {
+        flex-wrap: wrap
+    }
+    div.BasketSharing>div>div.InputBlock>div.InputField>textarea {
+        max-width: 100%;
+        width: auto
+    }
+}
+
+@media screen and (max-width:700px) {
+    .Header .PropertyContainer {
+        padding-bottom: 10px
+    }
+    .Header.HorizontalNavBar .custom-left {
+        width: 100%;
+        text-align: center
+    }
+    .Header.HorizontalNavBar .custom-right {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        width: 100%
+    }
+}
+
+@media screen and (max-width:600px) {
+    .FacetsToggle a {
+        border-width: 0!important
+    }
+    table.ProductListImageBox tr td .ImageArea img {
+        width: auto!important;
+        max-width: 100%
+    }
+    .ProductDetails .InfoArea {
+        padding: 20px!important
+    }
+    .start-page .ListItemCategory .ImageArea img {
+        max-width: 100%!important
+    }
+    .start-page .CategoryList .ListItemCategory {
+        min-width: unset;
+        width: 100%
+    }
+    .start-page .CategoryList .ListItemCategory .InfoArea {
+        bottom: -62px
+    }
+    .start-page .ListItemCategory {
+        padding-top: 50%!important;
+        margin: 0
+    }
+    .NavBarBottom img {
+        margin: 10px
+    }
+    .fa-shopping-cart:before {
+        font-size: 30px
+    }
+    .CategoryProducts form.AddToBasketForm button.AddToBasketButton.ep-js.ButtonBasket.ep-uiInput.ep-uiInput-button {
+        padding: 5px
+    }
+    .CategoryProducts form.AddToBasketForm button.AddToBasketButton::before {
+        margin-right: 10px
+    }
+    .CategoryProducts h3 a {
+        font-size: 20px
+    }
+    table.ProductListImageBox tr td {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 5px
+    }
+    .four-colums-product-list td {
+        min-height: 500px
+    }
+}
+
+@media screen and (max-width:500px) {
+    html body .GeneralLayout .HorizontalNavBar .BasketBox {
+        margin: 0!important
+    }
+    .NavBarRoof .SizeContainer,
+    .Header .SizeContainer {
+        width: auto
+    }
+    div.NavBarRoof {
+        display: none!important
+    }
+    .start-page .CategoryList .ListItemCategory {
+        width: 100%
+    }
+    .RemoteSearchResults .FloatRight.MarginBottom,
+    .CategoryProducts .FloatRight.MarginBottom {
+        margin-top: 0!important
+    }
+    .InfoArea {
+        box-sizing: border-box
+    }
+}
+
+@media screen and (max-width:389px) {
+    table.ProductListImageBox tr td {
+        width: 100%
+    }
+}
+
+.ContentArea .BreadcrumbItem, .ContentArea .BreadcrumbItem:hover, .ContentArea .BreadcrumbLastItem {
+    text-transform: uppercase;
+}
+
+.ProductDetails .NewProduct {
+    position: absolute;
+    z-index: 999;
+}
+
+.Preorder {
+    border: 2px solid #00003c;
+    height: 30px;
+    width: auto;
+    background: #00003c;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 2px 5px;
+    text-align: center;
+    margin: 0;
+    top: 72px;
+    color: #fff !important;
+    min-width: 60px;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 13px !important;
+    left: 0;
+    z-index: 99;
+    text-transform: uppercase;
+}
+
+html, body { background-size: 100%; }
+
+
+.ListItemCategory .InfoArea, .ListItemCategory .InfoArea h3, .ListItemCategory .InfoArea p, .ListItemCategory .Links, .ListItemCategory .Links h3 {
+    margin: 0 !important;
+}
+
+.CategoryList .ListItemCategory .InfoArea {
+    font-size: 0;
+}
+
+.BasketBox .FontSmaller { display: none; }
+.SmallText.DisplayBlock.ProductShippingMethods { display: none !important; }
+
+.start-page .ListItemCategory .ImageArea img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.start-page .ListItemCategory .ImageArea img {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.flexslider .slides img {
+    max-width: 100% !important;
+}
+
+.start-page .ListItemCategory .ImageArea {
+    overflow: hidden;
+}
+
+.start-page .ListItemCategory .ImageArea {
+    position: initial;
+}
+
+.start-page .ListItemCategory {
+    float: none;
+    height: auto;
+    padding-top: 0;
+}
+
+.start-page .CategoryList .ListItemCategory .InfoArea {
+    position: initial;
+}
+
+.start-page .CategoryList .ListItemCategory {
+    display: flex;
+    padding-top: 0 !important;
+    flex-wrap: wrap;
+    margin-bottom: 15px !important;
+}
+
+a:link {
+    color: inherit !important;
+}
+
+.RussianFont {
+    font-family: 'Play', sans-serif !important;
+}
+
+h1.RussianFont, h2.RussianFont, h3.RussianFont, h3 a.RussianFont, .menu>ul>li a.RussianFont, .ContextBoxHead span.RussianFont, a.flexslider-text-button.RussianFont, button.AddToBasketButton.RussianFont {
+    font-family: 'Play', sans-serif !important;
+}
+
+.flexslider li a {
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 959px) {
+    .ShopLogo img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ShopLogo img {
+        max-width: 100%;
+    }
+    .ui-dialog.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-resizable.epDialog {
+        transform: none;
+    }
+}
+
+/* Currency changing  */
+select#CurSelect {
+    border: 0;
+    border-radius: 0 !important;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMCAxMDAiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cG9seWdvbiBmaWxsPSIjMDEwMTAxIiBwb2ludHM9IjIzLjEsMzQuMSA1MS41LDYxLjcgODAsMzQuMSA4MS41LDM1IDUxLjUsNjQuMSAyMS41LDM1IDIzLjEsMzQuMSAiLz48L3N2Zz4=');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 1px;
+    width: 65px;
+    margin-left: 20px;
+}
+
+.MultipleStep-Container div#main-content {
+    position: absolute;
+}
+
+.ProductListImageBox tbody > tr:has(th),
+.BundledProductsTable tbody > tr:has(th),
+.CrossellingCount tbody > tr:has(th),
+.ListItemCategoryTable tbody > tr:has(th){
+    display: none !important;
+}
+
+#VilkasBasketForm_standalone option.STOCK_OUT_STOCK{
+    color: #aaa;
+}
+
+
+/* https://vdtvilkas.b-cdn.net/VDT/master/hockeyunlimited.fi/hockeyunlimited.css END*/
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
