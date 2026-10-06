@@ -1,0 +1,898 @@
+/*https://vdtvilkas.b-cdn.net/VDT/master/ThemeRock/VilkasRock.css*/
+/* Yleiset sivun asetukset */
+.Middle, .ContentArea, .ContentAreaInner, .ContentAreaWrapper {
+    overflow: visible !important;
+}
+#ContentAreaFix, .Div .ContentArea:before {
+    height: auto;
+}
+
+/* ----------- Fontit ----------- */
+.BasketBox span {
+    font-family: inherit !important;
+    font-size: inherit !important;
+}
+.fa-shopping-cart:before {
+    font-family: FontAwesome !important;
+    margin: 0 0.2em;
+}
+.fa, .fas {
+    font-family: FontAwesome !important;
+    font-style: normal !important;
+}
+
+/* cookie-ilmoitus */
+.message-bar.message-cookies {
+    background: #999;
+}
+.message-bar-inner {
+    text-align: center;
+}
+.message-bar-inner a {
+    color: #eee;
+}
+.message-cookies .fa-close-message {
+    border-radius: 5px;
+    width: 50px;
+    background: #000;
+    font-size: 1px;
+    padding-top: 5px;
+    right: 30px;
+    top: 10px;
+}
+a.fa-close-message:before {
+    content: "OK";
+    color: white !important;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+/* Sivuston leveys */
+.NavBarRoof .PropertyContainer, .NavBarTop .PropertyContainer, .Header .PropertyContainer, .NavBarTop, .Middle, .Footer .PropertyContainer {
+    width: auto;
+}
+.Div .ContentArea {
+    margin: 0;
+}
+.GeneralLayout {
+   width: 100%;
+   max-width: 100%;
+   height: 100%;
+   margin: 0px auto 0 auto;
+   overflow: hidden;
+}
+div.NavBarRoof .PropertyContainer, div.Header, div.NavBarTop .PropertyContainer, div.Middle, div.NavBarBottom .PropertyContainer, div.Footer .PropertyContainer {
+   max-width: 1600px !important;
+   margin: auto;
+   width: 100%;
+}
+div.NavBarRoof {
+    width: 100%;
+    min-height: 25px;
+}
+
+/* Roof */
+
+.NavBarRoof.HorizontalNavBar .custom-right .RoofToggle {
+	display: none;
+}
+html body .GeneralLayout .HorizontalNavBar .BasketBox span:first-child {
+    display: inline-block;
+}
+.NavBarRoof p {
+    line-height: 27px;
+}
+
+/* Header */
+.ShopLogo {
+    max-width: 90%;
+}
+.ShopLogo img {
+    max-width: 100%;
+}
+.Div .Header .ShopLogo, .Div .Header .ShopNameSlogan {
+    vertical-align: middle;
+}
+.ShopNameSlogan .ShopNameHead {
+    display: none;
+}
+.Header .ShopSlogan {
+    margin: auto;
+    vertical-align: middle !important;
+}
+.Header .ShopSlogan, .Header .ShopSlogan p {
+    font-size: 20px;
+}
+.SearchForm.horizontal-search .SearchIcon {
+    background-repeat: no-repeat !important;
+}
+.InputField.SearchForm {
+    padding: 0;
+}
+.BasketBox span.hasProducts {
+    display: none !important;
+}
+.basket-txt {
+   	display: block;
+}
+.basket-nbr, .basket-txt {
+   	margin: 0px 2px 1px 2px !important;
+}
+.basket-txt, .basket-nbr, .fa-shopping-cart:before {
+    float: left;
+}
+
+/* Navi */
+.NavBarTop .SizeContainer {
+    width: 100%;
+}
+
+
+/* Etusivu */
+.start-page h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+.start-page hr.Separator {
+    display: none !important;
+}
+
+/* Slider responsiiviseksi */
+.contentslider {
+    margin: 0px auto !important;
+    max-width: 1300px !important;
+}
+.contentslider > ul {
+    width: 100% !important;
+    height: auto !important;
+    padding-bottom: 33%;
+}
+.contentslider > ul > li {
+    width: 100% !important;
+}
+.contentslider > ul > li img {
+    width: 100% !important;
+}
+
+
+/* TuoteryhmÃ¤nostot */
+.start-page .CategoryList .CategoryList {
+    z-index: 100;
+    width: 100%;
+    margin: auto;
+}
+.start-page .ListItemCategory {
+    float: left;
+    margin: 0 0 50px 0;
+    padding: 0;
+    height: 0;
+    padding-top: 30%;
+    background: white;
+    position: relative;
+}
+.start-page .ListItemCategory .ImageArea {
+    margin: 0;
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90%;
+}
+.start-page .ListItemCategory .ImageArea img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.start-page .ListItemCategory .InfoArea h3 {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    background: #f1f1f1 !important;
+}
+.start-page .ListItemCategory .InfoArea h3 a {
+    font-size: 160%;
+}
+.start-page .ListItemCategory .InfoArea p {
+    display: none;
+}
+
+.start-page td.TextLeft, .start-page td.TextRight {
+    width: 100% !important;
+    display: block;
+    float: left;
+}
+div.CategoryList td.TextLeft:nth-of-type(2n) {
+    border-top: 5px #ccc double;
+    margin-top: 25px;
+    padding: 10px 0;
+}
+.start-page .CategoryBaseTable .TextLeft {
+    padding: 0;
+}
+
+/* Tuotelista */
+
+.FacetsToggle {
+   	display: none;
+}
+
+.ContentArea .BreadcrumbItem, .ContentArea .BreadcrumbItem:hover, .ContentArea .BreadcrumbLastItem {
+    font-weight: 100;
+    top: 10px;
+    font-size: 0.8em;
+    color: #999;
+}
+span.fa.fa-angle-right.LeftSmallPadding.RightSmallPadding {
+    display: none;
+}
+a.BreadcrumbItem:after {
+    content: "/";
+    margin: 0 5px;
+}
+table.ProductListImageBox tr td img {
+    max-width: 100% !important;
+}
+table.ProductListImageBox.three-colums-product-list .InfoArea .Description {
+    display: none;
+}
+.PageThis.ClearBoth {
+    display: none;
+}
+.CategoryProducts h3 a, .ListItemCategory .InfoArea h3 a {
+    font-size: 25px;
+}
+.CategoryProducts .ProductListImageBox div.InfoArea  {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.CategoryProducts .ProductListImageBox div.InfoArea .FloatLeft {
+    float: none;
+}
+.CategoryProducts .ProductListImageBox .NewProduct {
+    position: absolute;
+    top: 5px;
+    background: #cccccc30;
+    border: 1px solid #666;
+    padding: 5px;
+    left: 5px;
+    border-radius: 100%;
+}
+.CategoryProducts form {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: inherit;
+    left: 0;
+    height: 55px;
+    padding-bottom: 10px;
+}
+form.AddToBasketForm button.AddToBasketButton::before {
+    content: "\f07a";
+    font-family: FontAwesome !important;
+    margin-right: 10px;
+}
+.ep-uiInput-button.ep-uiSpinner-stepper {
+    border-radius: 30px;
+}
+.ep-uiSpinner-stepper {
+    height: 47px;
+}
+
+
+/* Tuotesivu */
+span.HotPrice {
+    line-height: 200%;
+    padding: 5px 10px;
+    background: #eee;
+    border: 1px dashed #666;
+    border-radius: 0 0 10px 0;
+    font-weight: bold;
+}
+/* Saatavuusilmoitus */
+.ProductDetails a.epGetEmailNotifikation {
+    border: 1px solid;
+    padding: 4px 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.CrossellingCount tr td img, .BundledProductsTable tr td img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.CrossellingCount .CrossellingInfoArea, .BundledProductsTable BundledProductsInfoArea {
+    padding: 25px 0 4px 0;
+}
+.CrossellingInfoArea, .CrossellingInfoArea .FloatLeft, .CrossellingInfoArea .FloatRight {
+    text-align: center !important;
+    width: 100%;
+}
+.CrossellingInfoArea button.ButtonBasket {
+    padding: 5px 10px;
+}
+
+/* Footer */
+/* Fix Vanilla "features" */
+.Footer .NavigationText ul li a + a {
+    margin-left: auto;
+}
+.Footer .ContextBoxBody strong {
+    color: inherit;
+}
+
+.NavBarBottom, .Footer {
+    white-space: normal;
+}
+.Footer .NavigationText ul h3 {
+    margin-bottom: 0;
+}
+.Footer .ContextBoxHead {
+	padding: 0 0 10px 0;
+	line-height: normal !important;
+}
+.Footer .ContextBoxHead span {
+    height: inherit !important;
+    text-align: inherit !important;
+}
+.Footer .BoxContainer .ContextBoxBody, .Footer .NavigationText ul li, .Footer .ContextBox .BoxContainer h3 {
+	margin-bottom: 10px !important;
+}
+.Footer .SizeContainer div {
+	vertical-align: top;
+}
+.Footer .ContextBox {
+    min-width: 200px;
+}
+.Footer .NavigationText img {
+    margin: 10px 15px 0 0;
+}
+
+
+
+/* Desktop */
+@media screen and (max-width: 1200px)
+{
+	/* Reunus, jos ruutu on tÃ¤ysi */
+	.NavBarRoof .PropertyContainer, .Header .PropertyContainer, .ContentArea {
+	    width: 98% !important;
+    	padding: 0 1%;
+	}
+}
+@media screen and (min-width: 900px)
+{
+	/* Header */
+	.ShopLogo {
+    	margin-right: 30px;
+	}
+	/* Etusivu */
+	.start-page .ListItemCategory {
+    	width: 49%;
+    }
+	.start-page .ListItemCategory:nth-child(even) {
+    	margin-right: 2%;
+	}
+
+	/* Tuotelista */
+	.four-colums-product-list div.ImageArea {
+    	line-height: 350px !important;
+	}
+	.four-colums-product-list .ImageArea img {
+	    max-height: 350px;
+    	max-width: 100%;
+	}
+
+	/* Tuotesivu */
+	.ProductDetails .InfoArea {
+		width: 45%;
+	}
+	.ProductDetails .ProductImage {
+		margin: 0;
+		max-width: 50%;
+	}
+	.CrossellingImageArea {
+	    min-height: 300px;
+    	position: relative;
+	}
+	.CrossellingImageArea a {
+    	position: absolute;
+    	left: 50%;
+	    top: 50%;
+    	transform: translate(-50%, -50%);
+	}
+}
+
+/* iPad */
+@media screen and (max-width: 900px)
+{
+/* Roof */
+	.NavBarRoof.HorizontalNavBar .custom-right.Collapsed {
+    	height: 0;
+    	overflow: hidden;
+	}
+	.NavBarRoof.HorizontalNavBar .custom-right  {
+    	height: auto;
+    	padding-right: 10px;
+	}
+	.NavBarRoof.HorizontalNavBar .custom-right .RoofToggle {
+    	display: block;
+    	position: absolute;
+    	right: 0;
+    	top: 5px;
+	}
+	.LocaleFlags a {
+    	margin: 0 7px;
+	}
+	.RoofToggle a {
+    	padding: 3px;
+	    margin: 5px;
+	    font-size: 150%;
+	}
+
+	html body .GeneralLayout .HorizontalNavBar .BasketBox span:first-child {
+    	display: none;
+	}
+	.NavBarRoof p {
+    	line-height: 100%;
+	    font-size: 80%;
+    	padding: 5px;
+	}
+	/* Navi */
+	.NavBarTop.HorizontalNavBar div.SizeContainer {
+		height: auto;
+	 }
+	.NavBarTop .PropertyContainer {
+		height: auto !important;
+	}
+
+/* Head */
+	div.NavBarRoof .PropertyContainer {
+	    height: auto;
+	}
+	.Header .ShopSlogan {
+    	display: none;
+	}
+	/* Etusivu */
+	.start-page .ListItemCategory {
+    	width: 49%;
+    }
+	.start-page .ListItemCategory:nth-child(even) {
+    	margin-right: 2%;
+	}
+
+/* Tuotelista */
+	table.ProductListImageBox tr, table.ProductListImageBox tr {
+    	display: block;
+	}
+	table.ProductListImageBox tr td {
+    	width: 33%;
+	    float: left;
+    	padding: 0;
+	}
+	.ProductListImageBox div.InfoArea {
+	    min-height: 380px;
+    	margin-bottom: 30px;
+	}
+
+
+/* Footer */
+	.Footer .SizeContainer.custom-container.custom-left {
+    	width: 100%;
+	}
+	.Footer .NavigationText {
+    	width: 100%;
+	}
+}
+
+
+/* Mobiili */
+@media screen and (max-width: 600px)
+{
+
+/* Head */
+	.Header .SizeContainer {
+    	padding-top: 10px;
+	}
+	.Header .PropertyContainer {
+    	padding-bottom: 10px !important;
+	}
+	.Header .ShopLogo img {
+    	max-height: 70px;
+	}
+	.basket-txt, .basket-nbr, .fa-shopping-cart:before {
+    	float: left;
+	}
+	/* Piilotetaan nÃ¤ytÃ¤ ostoskori -teksti */
+	.basket-txt {
+    	display: none;
+	}
+	.basket-nbr, .basket-txt {
+    	margin: 2px !important;
+    	font-size: inherit !important;
+	}
+	.Header .BasketBox.NavElementIcon span.fa.fa-shopping-cart {
+    	font-family: inherit !important;
+    	font-size: 0;
+	}
+/* Etusivu */
+	.start-page .CategoryList .CategoryList {
+	    top: 0;
+	}
+	.start-page .ListItemCategory {
+		width: 100%;
+		padding-top: 45%;
+    	margin: 10px 0;
+	}
+	.start-page .ListItemCategory .ImageArea {
+		height: 80%;
+	}
+	.start-page h2 {
+    	margin: 20px 0;
+	}
+
+/* Footer */
+	.Footer .SizeContainer.custom-container.custom-left {
+    	width: 100%;
+	}
+	.Footer .NavigationText {
+    	width: 100%;
+	}
+/* Tuotelista */
+	/* Hakusuodatin */
+	div#RemoteSearchFacets.Collapsed {
+    	height: 40px;
+    	overflow: hidden;
+	}
+	div#RemoteSearchFacets {
+    	height: auto;
+	}
+	.FacetsToggle {
+    	display: block;
+	}
+	.FacetsToggle a {
+	    border: 1px solid;
+    	padding: 3px;
+	    margin: 5px;
+    	display: block;
+    	text-align: center;
+	}
+
+	table.ProductListImageBox tr, table.ProductListImageBox tr {
+    	display: block;
+	}
+	table.ProductListImageBox tr td {
+	    width: 48%;
+    	float: left;
+    	padding: 0;
+	}
+	.ProductListImageBox div.InfoArea {
+    	min-height: 415px;
+	    border-top: 1px solid #f1f1f1;
+    	margin-bottom: 30px;
+	}
+
+	.CategoryProducts button.ep-js.ButtonBasket.AddToBasketButton.ep-uiInput.ep-uiInput-button {
+    	padding: 5px;
+	}
+	/* Piilotetaan teksti napista mobiilissa */
+	.CategoryProducts form.AddToBasketForm  button.AddToBasketButton.ep-js.ButtonBasket.ep-uiInput.ep-uiInput-button {
+	    font-size: 0;
+    	padding: 15px 20px 10px;
+	}
+	.CategoryProducts form.AddToBasketForm  button.AddToBasketButton::before {
+	    margin-right: 0;
+    	font-size: initial !important;
+	}
+
+
+	/* Ennakoiva haku */
+	.de_epages-remotesearchUiSuggest-box {
+		left: 0 !important;
+	}
+
+	/* Tuotelista */
+	/* Piilotetaan mobiilissa juttuja */
+	.CategoryProducts span.ProductNo,
+	.CategoryProducts .InfoArea br,
+	.CategoryProducts .ClearBoth .ClearBoth .ClearBoth {
+		display: none !important;
+	}
+	/* Tuotearviot */
+	#NewRatingTable .SizeContainer {
+		min-width: 300px;
+	}
+	#NewRatingTable .InputLabelling.RightPadding .FloatRight {
+		float: left;
+	}
+	div#NewRatingTable .InputField {
+		width: 100%;
+	}
+	#NewRatingTable textarea.ExtremeLongText, input.ExtremeLongText {
+		width: 300px;
+	}
+
+	/* Tuotesivu */
+	/* Lightbox*/
+	.ep-uiLightbox.ui-dialog.ui-front.ep-uiLightbox-showThumbs {
+		width: 85% !important;
+		left: 5% !important;
+	}
+	.ep-uiLightbox .ep-uiLightbox-thumbs {
+		width: 100%;
+	}
+	.ep-uiLightbox .ep-uiThumbbox.ep-uiThumbbox-list li {
+		width: 50px !important;
+		height: 50px !important;
+		line-height: 50px !important;
+	}
+	.ep-uiLightbox-showThumbs .ep-uiLightbox-slides {
+		right: 0;
+		width: 100%;
+	}
+
+
+
+	/* Ristiinmyynti */
+	.CrossellingCount tr td, .CrossellingCount tr td div {
+		display: block;
+		width: 95%;
+		text-align: center !important;
+	}
+
+	/* Ostoskori */
+	img.ThumbnailsInBasket {
+		display: none;
+	}
+	table.Basket td, table.Basket td a, table.Basket td input {
+		font-size: 85% !important;
+	}
+	td.NoWrap {
+		white-space: normal !important;
+		text-align: center !important;
+	}
+
+	/* Ostoskori, perinteinen tilausprosessi */
+	table.Basket td {
+	    word-break: break-all;
+    	hyphens: auto;
+	}
+	table.productBasketImage tr td {
+    	padding: 0;
+	}
+	.Basket .Money {
+    	white-space: normal;
+	}
+	.BasketSharing .InputBlock .BS-inputLabel, .BasketSharing .InputBlock .InputField {
+		width: 100%;
+		float: left;
+		display: block;
+		padding: 0;
+	}
+	.BasketSharing .InputBlock {
+		display: block !important;
+	}
+	.BasketSharing textarea.BasketSharing-textarea {
+		width: 300px !important;
+		font-size: 75% !important;
+	}
+	.BasketSharing {
+		width: 100%;
+		float: left;
+	}
+	.BasketSharing .Dialog {
+		padding: 0;
+	}
+	.Basket input#CouponCode {
+		width: 95px;
+	}
+	.Basket .ShippingOptionContainer .HalfWidth {
+		width: 100% !important;
+		padding-bottom: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 1022px)
+{
+	.NavBarRoof, .Header, .NavBarTop, .Footer {
+    	width: auto;
+    	padding: 0;
+    }
+
+	 /* EstetÃ¤Ã¤n navigaatioelementtien liikuttelu editorilla mobiilissa */
+	 .NavBarRoof .SizeContainer div, .NavBarTop .SizeContainer div, .Header .SizeContainer div, .Footer .SizeContainer div {
+	    left: auto;
+    	top: auto;
+	}
+
+}
+
+@media only screen and (min-width: 1023px)
+{
+	/* Navi */
+	.NavBarTop {
+		white-space: normal;
+		overflow: visible;
+	}
+	.NavBarTop .PropertyContainer, .NavBarTop .SizeContainer {
+		overflow: visible;
+		height: auto;
+	}
+}
+
+
+/* Basket overlay*/
+div#BasketOverLay span.hasProducts { text-align: center; display: block; padding: 5px 10px 10px; }
+div#BasketOverLay span.fa.fa-shopping-cart { display: none; }
+div#BasketOverLay { border: none !important; margin-top: 0px !important; background: #e0f5c8 !important; left: 0px !important; min-width: 100% !important; position: fixed !important; top: 0px !important;  z-index: 9999999999999 !important; }
+
+div#BasketOverLay {
+            /* for chrome and safari*/
+            -webkit-animation-duration: 1s;
+            -webkit-animation-name: slidein;
+
+            /*for firefox*/
+            -moz-animation-duration: 1s;
+            -moz-animation-name: slidein;
+
+              /* for opera*/
+            -o-animation-duration: 1s;
+            -o-animation-name: slidein;
+
+              /* Standard syntax*/
+            animation-duration: 1s;
+            animation-name: slidein;
+        }
+
+        @-webkit-keyframes slidein {
+            from {
+                margin-top: -30px;
+            }
+
+            to {
+                margin-top: 0px;
+            }
+        }
+
+        @-moz-keyframes slidein {
+             from {
+                margin-top: -30px;
+            }
+
+            to {
+                margin-top: 0px;
+            }
+        }
+         @-o-keyframes slidein {
+            from {
+                margin-top: -30px;
+            }
+
+            to {
+                margin-top: 0px;
+            }
+        }
+          @keyframes slidein {
+             from {
+                margin-top: -30px;
+            }
+
+            to {
+                margin-top: 0px;
+            }
+        }
+
+
+        /* Internet explorer 11+ fixes */
+
+                  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+                     /* IE11+ specific styles go here */
+                     img {
+                       max-width: unset!important;
+                     }
+
+                     .ProductListImageBox tbody {
+                       display: block!important;
+                       text-align: center!important;
+                     }
+
+                     .ProductListImageBox tbody td {
+                       display: inline-block!important;
+                       min-height: 460px!important;
+                     }
+
+                     .ProductListImageBox .InfoArea {
+                       display: block!important;
+                     }
+
+                     .ProductListImageBox .NewProduct, .ListItemProduct .NewProduct, .SlimHotDealTop .NewProduct, .HotDealTopFloatin .NewProduct, .Tarjous {
+                       margin: 0!important;
+                     }
+
+                     .ProductListImageBox.four-colums-product-list tbody td {
+                       min-width: 290px!important;
+                     }
+        /*
+                     .ProductListImageBox.four-colums-product-list .InfoArea {
+                       max-width: 290px!important;
+                     }
+        */
+                     .ProductListImageBox.three-colums-product-list tbody td  {
+                       min-width: 370px!important;
+                     }
+
+                     .ProductListImageBox.three-colums-product-list .InfoArea {
+                       max-width: 370px!important;
+                     }
+
+                     .ProductListImageBox.two-colums-product-list tbody td {
+                       min-width: 570px!important;
+                     }
+
+                     .ProductListImageBox.two-colums-product-list .InfoArea {
+                       max-width: 570px!important;
+                     }
+
+                     div.NavBarBottom .PropertyContainer {
+                       margin: 0px!important;
+                     }
+
+                     .CrossellingCount tbody {
+                       display: block!important;
+                     }
+
+                     .CrossellingCount tbody td {
+                       display: inline-block!important;
+                       width: 20%!important;
+                       min-width: 200px!important;
+                     }
+
+                     .ProductDetails .InfoArea {
+                       min-width: 300px!important;
+                     }
+
+                  }
+
+                  @media screen and (-ms-high-contrast: active) and (max-width: 700px), screen and (-ms-high-contrast: none) and (max-width: 700px) {
+                    .ProductListImageBox.three-colums-product-list tbody td,
+                    .ProductListImageBox.two-colums-product-list tbody td,
+                    .ProductListImageBox.four-colums-product-list tbody td
+                     {
+                      min-width: 100px!important;
+                    }
+
+                    .CrossellingCount tbody {
+                      text-align: center!important;
+                    }
+
+                  }
+                  @media screen and (min-width: 700px) {
+                      .four-colums-product-list td {
+                          width: 23% !important;
+                      }
+                   }
+
+                  @media screen and (max-width: 500px) {
+                    .MultipleStep-Container .Header {
+                      flex-direction: row!important;
+                    }
+                  }
+
+                  @media screen and (-ms-high-contrast: active) and (max-width: 400px), screen and (-ms-high-contrast: none) and (max-width: 400px) {
+                    .ProductListImageBox tbody td {
+                      margin: 0 auto!important;
+                      text-align: center!important;
+                  	}
+
+                    .two-colums-product-list .ImageArea img,
+                    .three-colums-product-list .ImageArea img,
+                    .four-colums-product-list .ImageArea img {
+                      width: 100%!important;
+                    }
+                  }
+        /* Internet explorer 11+ fixes  end */
+
+
+/* Ver 1.1 - Ristiinmyynnin tuotteiden asettelua, tuotelistan korjaus (kuvat venyi tietysÃ¤ tilanteessa) */
+/* Ver 1.2 - Tuotekuvien korjausta lisÃ¤Ã¤, megamenun js:n pÃ¤ivitys, Yhteensopivuus IE:n kanssa parannettu */
