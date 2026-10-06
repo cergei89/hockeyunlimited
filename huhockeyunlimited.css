@@ -1,0 +1,1388 @@
+/*https://vdtvilkas.b-cdn.net/VDT/master/hockeyunlimited.fi/hockeyunlimited.css*/
+.extraBnr {
+    height: auto!important;
+    max-height: unset!important;
+    min-height: unset!important
+}
+
+a:link {
+    color: inherit
+}
+
+p,
+span {
+    line-height: 180%
+}
+
+hr.separator {
+    border-width: 0!important
+}
+
+.message-bar.message-cookies {
+    background: #00003c
+}
+
+.message-bar.message-cookies * {
+    color: #fff!important;
+    text-align: center
+}
+
+.message-bar.message-cookies button {
+    color: #fff!important;
+    background: #255ccc;
+    transition: .3s ease-out
+}
+
+.message-bar.message-cookies button:hover {
+    opacity: .7;
+    transition: .3s ease-out
+}
+
+MultipleStep-Container span,
+MultipleStep-Container p {
+    line-height: 140%!important
+}
+
+.TrashIcon {
+    background: url(/WebRoot/StoreTypes/7.31.0/VilkasStore/SF/Icon/WireframeWhite/xico_s_remove_item.png.pagespeed.ic.DoDGLqs3mT.png)!important
+}
+
+.ShoppingListIcon {
+    background: url(/WebRoot/StoreTypes/7.31.0/VilkasStore/SF/Icon/WireframeWhite/xico_s_shoppinglist.png.pagespeed.ic.XYISGa4qXT.png)!important
+}
+
+.Header .ShopName,
+.Header .ShopSlogan {
+    display: none!important
+}
+
+#ContinueShoppingButton {
+    display: none!important
+}
+
+.ep-uiInput-button,
+.CustomButton {
+    background: #00003c!important;
+    color: #fff!important
+}
+
+.CheckOutNav li.done a {
+    color: #fff!important
+}
+
+.MultipleStep-Container .ep-uiInput-select {
+    width: 174px
+}
+
+.ep-uiInput-button:hover,
+.CustomButton:hover {
+    background: #255ccc!important
+}
+
+.SearchToggle {
+    display: none!important
+}
+
+.SearchToggle a:before {
+    content: "\f002";
+    font-family: fontawesome!important;
+    font-size: 30px;
+    color: #fff
+}
+
+.menu>ul>li {
+    color: #fff!important
+}
+
+.menu {
+    color: #fff!important
+}
+
+.menu>ul>li a:active,
+.menu>ul>li a:focus,
+.menu>ul>li a:focus-within {
+    color: #000!important;
+    background: #fff!important
+}
+
+menu>ul>li>a:active::after,
+.menu>ul>li>a:focus::after,
+.menu>ul>li>a:focus-within::after {
+    border-color: #255ccc!important
+}
+
+.menu>ul>li>a {
+    position: relative;
+    padding: 6px 15px;
+    color: #fff!important
+}
+
+.menu>ul>li:hover,
+.menu>ul>li:active,
+.menu>ul>li:focus {
+    background: #fff!important
+}
+
+.menu>ul>li:hover>a,
+.menu>ul>li:active>a,
+.menu>ul>li:focus>a {
+    color: #000!important
+}
+
+.menu>ul>li:hover>a:after,
+.menu>ul>li:active>a:after,
+.menu>ul>li:focus>a:after {
+    border-color: #255ccc;
+    transform: scaleX(1)
+}
+
+.menu>ul>li>a:hover {
+    background: #fff!important
+}
+
+.menu>ul>li:hover {
+    background: transparent
+}
+
+.menu>ul>li>ul {
+    background: #fff;
+    padding: 0!important;
+    border: 1px solid #00003c
+}
+
+.menu>ul>li>ul>li {
+    padding: 0;
+    margin: 5px!important;
+    width: calc(25% - 10px);
+    box-sizing: border-box
+}
+
+.menu>ul>li>ul>li>ul>li a:hover {
+    transition: .3s ease-out
+}
+
+.menu>ul>li>ul>li>a {
+    border-bottom: 2px solid #002d72;
+    font-weight: bold
+}
+
+.menu>ul>li>ul>li>a:hover {
+    text-decoration: underline
+}
+
+.menu>ul>li>ul>li a:hover {
+    border-color: #00003c;
+    transition: .3s ease-out;
+    font-weight: bold
+}
+
+.menu>ul>li>ul.normal-sub>li {
+    margin: 0!important;
+    border-bottom: 0!important;
+    width: 100%
+}
+
+.menu>ul>li>ul>li a {
+    padding: 6px 15px!important;
+    width: calc(100% - 10px);
+    box-sizing: border-box;
+    color: #000!important;
+    margin: 0 5px
+}
+
+.menu>ul>li>a:after {
+    transition: transform .3s ease-out, border-color .3s ease-out;
+    position: absolute;
+    display: block;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    content: "";
+    padding-bottom: inherit;
+    border-top: 2px solid #000
+}
+
+.menu li>a:hover:after {
+    border-color: #255ccc;
+    transform: scaleX(1)
+}
+
+.ContentArea .BreadcrumbItem,
+.ContentArea .BreadcrumbItem:hover,
+.ContentArea .BreadcrumbLastItem {
+    color: #000;
+    position: relative;
+    top: 0
+}
+
+.SearchForm.horizontal-search>input {
+    padding: 10px 30px 10px 10px;
+    background: #fff
+}
+
+.CrossellingCount tr td img,
+.BundledProductsTable tr td img {
+    max-height: 200px;
+    width: auto
+}
+
+div.CrossellingImageArea,
+div.BundledProductsImageArea {
+    height: 200px;
+    line-height: 200px
+}
+
+.CrossellingCount tr td {
+    padding-bottom: 50px
+}
+
+.CrossellingCount button.ButtonBasket {
+    display: none!important
+}
+
+#ProductSlideshow {
+    max-height: 600px;
+    height: 600px;
+    max-width: 600px
+}
+
+.ProductDetails {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    margin: 80px 0
+}
+
+.ProductDetails .ProductImage {
+    width: 50%
+}
+
+.AdditionalLinks.New li,
+.AdditionalLinks.New {
+    margin-bottom: 0
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    min-width: 200px;
+    text-align: center
+}
+
+.PriceContainer {
+    padding: 0;
+    background: #fff
+}
+
+.price-value,
+.HotDeal .price-value {
+    font-size: 24px;
+    color: #00003c
+}
+
+button,
+input,
+textarea,
+select,
+.ep-uiInput,
+.InputField.SearchForm {
+    border-color: #00003c
+}
+
+.ProductDetails .PriceContainer .Price {
+    margin-bottom: 15px
+}
+
+.ProductDetails .PriceContainer .price-value {
+    font-size: 30px
+}
+
+.HotDeal .InfoArea a {
+    font-family: 'Teko'!important;
+    font-size: 22px!important
+}
+
+.ProductDetails .InfoArea {
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    height: fit-content
+}
+
+.AddToBasketButton[type="submit"],
+.Customizable button {
+    background: #255ccc
+}
+
+.NavBarBottom {
+    border-top: 1px solid
+}
+
+.Div .Middle {
+    box-sizing: border-box
+}
+
+.NavBarRoof {
+    border-bottom: 1px solid #e8e8ef
+}
+
+div.NavBarRoof .PropertyContainer {
+    justify-content: flex-end
+}
+
+.NavBarTop .PropertyContainer,
+.NavBarTop .SizeContainer {
+    height: auto
+}
+
+.NavBarBottom img {
+    margin: 10px 25px;
+    max-width: 100%
+}
+
+.NavBarBottom .NavigationText {
+    margin: 0;
+    padding: 0
+}
+
+.ep-2-click-button.DisplayInlineBlock {
+    padding: 0 1px;
+    border-radius: 50%!important;
+    box-sizing: border-box
+}
+
+.ep-2-click-button span {
+    background: none!important
+}
+
+.SelectLabelling {
+    display: none
+}
+
+.SelectVariation .SelectLabelling {
+    display: block
+}
+
+div.Footer .PropertyContainer {
+    display: flex;
+    justify-content: center
+}
+
+.Footer a,
+.Footer * {
+    font-size: 14px;
+    text-transform: uppercase
+}
+
+td.transparent-background {
+    display: none!important
+}
+
+.show-facets .ProductListImageBox.four-colums-product-list div.ImageArea {
+    line-height: 180px!important
+}
+
+.Middle .ContentAreaWrapper>.RemoteSearchFacets,
+.Middle .ContentAreaWrapper .CategoryList>.RemoteSearchFacets {
+    width: 280px
+}
+
+.RemoteSearchFacet a,
+.RemoteSearchFacet label {
+    font-size: 16px;
+    font-weight: bold
+}
+
+.CategoryList .CategoryList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.CategoryList .ListItemCategory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: unset;
+    min-width: 90px;
+    margin: 10px
+}
+
+.ListItemCategory .InfoArea h3 {
+    text-align: center;
+    min-width: unset;
+    color: #fff!important
+}
+
+.CategoryList .ListItemCategory a:hover {
+    background: #2058cf;
+    transition: .4s ease-out
+}
+
+.CategoryList .ListItemCategory h3 a {
+    color: #fff!important;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #00003c;
+    text-transform: uppercase;
+    display: block
+}
+
+.start-page .CategoryList .ListItemCategory h3 a {
+    background: #fff;
+    color: #00003c!important
+}
+
+.start-page .CategoryList .ListItemCategory h3 a:hover {
+    background: #fff;
+    color: #00003c;
+    transition: .3s ease-out
+}
+
+.start-page .ListItemCategory .ImageArea img {
+    object-fit: unset!important;
+    height: auto!important
+}
+
+.four-colums-product-list .epWidth75.epWidth-4 {
+    display: none!important
+}
+
+.ProductListImageBox div.ImageArea {
+    overflow: hidden!important
+}
+
+.ProductListImageBox div.ImageArea img:hover {
+    transition: .5s ease-in-out;
+    transform: scale(1.2)
+}
+
+.ProductListImageBox div.ImageArea img {
+    transition: .5s ease-in-out
+}
+
+.ep-uiMagnifier-box>div>img,
+.ep-uiMagnifier-zoom>div>img {
+    bottom: unset
+}
+
+.Footer .NavigationText {
+    width: 100%
+}
+
+#NavElement_40949911,
+.Footer .NavigationText ul {
+    width: 50%
+}
+
+#NavElement_40949907,
+#NavElement_40949909 {
+    width: 25%
+}
+
+.Footer .SizeContainer.custom-container.custom-left {
+    width: 100%;
+    padding: 0 20px!important;
+    box-sizing: border-box
+}
+
+html body .GeneralLayout .HorizontalNavBar .BasketBox {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.start-page .CategoryProducts {
+    padding-bottom: 50px
+}
+
+.SlimHotDealTop .NewProduct,
+.HotDealTopFloatin .NewProduct,
+.ProductDetails .NewProduct,
+.CategoryProducts .ProductListImageBox .NewProduct {
+    border: 2px solid #255ccc;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px;
+    min-width: 60px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-radius: 0;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background: #255ccc;
+    font-size: 13px;
+    color: #fff
+}
+
+.Tarjous {
+    border: 2px solid red;
+    height: 30px;
+    width: 30px;
+    background: red;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 2px 5px;
+    text-align: center;
+    margin: 0;
+    top: 36px;
+    color: #fff!important;
+    min-width: 60px;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 13px!important;
+    left: 0;
+    z-index: 99
+}
+
+div#BasketOverLay {
+    background: #255ccc!important
+}
+
+div#BasketOverLay * {
+    color: #fff!important
+}
+
+div#BasketOverLay span:nth-child(1):before {
+    content: "\f07a";
+    font-family: fontawesome;
+    font-size: 20px
+}
+
+.ProductListImageBox div.ImageArea img {
+    max-width: 80%
+}
+
+.HotDeal .InfoArea a {
+    font-size: 16px;
+    white-space: initial;
+    padding: 0 5px;
+    box-sizing: border-box
+}
+
+div.CategoryList td.TextLeft:nth-of-type(2n) {
+    border-top: 0!important
+}
+
+.HotDealList {
+    margin-top: 40px
+}
+
+.HotDealList .FontSmaller {
+    font-size: .80em!important
+}
+
+.HotDealList h3 {
+    height: 72px;
+    overflow: hidden
+}
+
+.HotDeal {
+    position: relative
+}
+
+.four-colums-product-list td {
+    min-height: 650px
+}
+
+.flexslider {
+    border-width: 0!important
+}
+
+.flexslider .slides img {
+    max-width: 1920px;
+    margin: 0 auto
+}
+
+.flex-control-nav {
+    bottom: 20px!important
+}
+
+.flex-control-paging li a:hover,
+.flex-control-paging li a.flex-active {
+    background: red!important
+}
+
+.flex-control-paging li a {
+    width: 30px!important;
+    height: 30px!important;
+    background: #00003c!important
+}
+
+.SearchElement {
+    margin-top: 0
+}
+
+.start-page .CategoryList .ListItemCategory .InfoArea {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff!important
+}
+
+.start-page .CategoryList .ListItemCategory {
+    margin: 20px;
+    width: calc(50% - 40px);
+    margin-bottom: 80px;
+    min-width: 600px;
+    text-align: center;
+    overflow: hidden
+}
+
+.start-page .ListItemCategory .InfoArea h3 {
+    padding-top: 0!important;
+    background: #fff !important;
+    border-bottom: none;
+}
+
+.CategoryProducts form {
+    padding-bottom: 0;
+    height: auto
+}
+
+.Footer .NavigationText li a>img {
+    border-radius: 50%
+}
+
+.Footer .NavigationText img:hover {
+    opacity: .8
+}
+
+.Footer h3,
+.Footer .ContextBoxHead span {
+    font-size: 30px!important
+}
+
+.start-page td.TextLeft,
+.start-page td.TextRight {
+    margin: 0!important;
+    padding: 0!important
+}
+
+.FourPoints {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px
+}
+
+.FourPointsInner {
+    width: 25%;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.FourPointsInner h3 {
+    font-weight: bold;
+    margin-bottom: 0
+}
+
+.FourPointsInner p {
+    font-weight: bold;
+    text-align: center
+}
+
+.FourPointsInner:nth-child(1):before {
+    display: block;
+    margin: 0 auto;
+    content: "\f0d1";
+    font-family: fontawesome;
+    background-size: cover;
+    font-size: 60px;
+    color: #00003c;
+    margin-bottom: 40px
+}
+
+.FourPointsInner:nth-child(2):before {
+    display: block;
+    color: #00003c;
+    content: "\f2b7";
+    font-family: fontawesome;
+    margin: 0 auto;
+    background-size: cover;
+    font-size: 60px;
+    margin-bottom: 40px
+}
+
+.FourPointsInner:nth-child(3):before {
+    display: block;
+    margin: 0 auto;
+    content: "\f0ec";
+    font-family: fontawesome;
+    background-size: cover;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #00003c
+}
+
+.FourPointsInner:nth-child(4):before {
+    display: block;
+    margin: 0 auto;
+    content: "\f0ac";
+    font-family: fontawesome;
+    background-size: cover;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #00003c
+}
+
+.ContentArea .ContentAreaWrapper>a.LinkPrintView {
+    display: none!important
+}
+
+.epWidth50.epWidth-4,
+.ep-uiInput-button.ep-uiSpinner-stepper {
+    display: none!important
+}
+
+.ui-slider .ui-slider-range {
+    background: #fff
+}
+
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    background: #2058cf
+}
+
+.ContentArea button.AddToBasketButton {
+    border: 2px solid #255ccc;
+    width: 100%!important;
+    box-sizing: border-box;
+    background: #fff!important;
+    color: #000!important;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 20px!important;
+    padding: 8px
+}
+
+.ContentArea button.AddToBasketButton:hover {
+    background: #255ccc!important;
+    transition: .4s ease-out;
+    color: #fff!important
+}
+
+.ShowVariations button.AddToBasketButton {
+    background: #fff!important;
+    border: 2px solid #255ccc
+}
+
+.ShowVariations button.AddToBasketButton:before {
+    content: "\f1de";
+    font-family: fontawesome;
+    margin-right: 10px
+}
+
+.ShowVariations button.AddToBasketButton:hover {
+    background: #255ccc!important;
+    transition: .4s ease-out;
+    color: #fff!important
+}
+
+.ProductDetails button.AddToBasketButton {
+    background: #255ccc!important;
+    color: #fff!important;
+    max-width: 250px;
+    font-size: 20px!important
+}
+
+.ProductDetails button.AddToBasketButton:hover {
+    background: #00003c!important;
+    transition: .4s ease-out
+}
+
+table.SelectVariation tr {
+    height: auto
+}
+
+.PriceContainer .SelectVariation,
+.PriceContainer .SelectVariation td,
+.PriceContainer .SelectVariation th,
+.PriceContainer .SelectVariation tr {
+    display: block
+}
+
+table.SelectVariation {
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+.ImgLeft .ProductImage {
+    margin: 0!important
+}
+
+.ep-uiCustomizer-inputSelected input,
+.ep-uiCustomizer-inputSelected .ep-uiInput-button,
+.ep-uiCustomizer-inputSelected textarea,
+.ep-uiCustomizer-canvasHover,
+.ep-uiCustomizer-fontColor li.selectedColor,
+canvas.ep-uiCustomizer-canvasSelected,
+.ep-uiThumbbox ul li.active {
+    border: 1px solid #255cce!important;
+    box-shadow: unset
+}
+
+.ProductListImageBox.four-colums-product-list div.ImageArea {
+    border-bottom: 1px solid #e2e2e2
+}
+
+.ContentArea button,
+.ContentArea .LoginButton,
+.ContentArea .ep-uiInput-button {
+    background: #00003c!important;
+    color: #fff!important
+}
+
+.ShopSlogan {
+    display: none!important
+}
+
+.ShopLogo img {
+    max-width: 500px
+}
+
+#AddContainerItemsToShoppingListForm736391>button {
+    padding: 7px 15px
+}
+
+.ProductListImageBox div.InfoArea {
+    padding: 0;
+    box-sizing: border-box
+}
+
+.menu-dropdown-icon:before {
+    width: 47px;
+    height: 47px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #255ccc
+}
+
+.ProductListImageBox tr td {
+    padding-bottom: 80px
+}
+
+.ProductRating form {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.ProductRatingDisabledIcon,
+.ProductRatingDisabledIconSmall {
+    background: none!important;
+    height: 0;
+    width: 22px
+}
+
+.ProductRatingDisabledIcon:after,
+.ProductRatingDisabledIconSmall:after {
+    content: "\f006";
+    font-family: fontawesome!important;
+    color: #255ccc!important;
+    font-size: 20px!important;
+    font-style: initial
+}
+
+.ProductRatingEnabledIcon,
+.ProductRatingEnabledIconSmall {
+    background: none!important;
+    height: 0;
+    width: 22px
+}
+
+a.productRatingStars,
+a.productRatingStars {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center
+}
+
+.ProductRatingEnabledIcon:after,
+.ProductRatingEnabledIconSmall:after {
+    content: "\f005";
+    font-family: fontawesome!important;
+    color: #255ccc!important;
+    font-size: 20px!important;
+    font-style: initial
+}
+
+.start-page .ListItemCategory .ImageArea {
+    height: 100%
+}
+
+@media screen and (min-width:1200px) {
+    .Div .Middle {
+        padding: 15px 15px 50px 15px
+    }
+}
+
+@media screen and (max-width:1200px) {
+    table.ProductListImageBox tr td {
+        width: 33%;
+        box-sizing: border-box;
+        padding: 10px;
+        float: left
+    }
+    .basket-txt {
+        display: none!important
+    }
+    table.ProductListImageBox tr,
+    table.ProductListImageBox tr {
+        display: block
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .Footer.HorizontalNavBar .SizeContainer.custom-container.custom-right,
+    .Footer.HorizontalNavBar .SizeContainer.custom-container.custom-left {
+        width: auto
+    }
+    .Footer .SizeContainer.custom-container.custom-left {
+        padding: 0 10px!important
+    }
+    .Footer .ContextBox .ContextBoxHead span,
+    .Footer .ContextBox .ContextBoxHead h1 {
+        text-align: center!important
+    }
+    #NavElement_40949911,
+    .Footer .NavigationText ul,
+    #NavElement_40949907,
+    #NavElement_40949909 {
+        width: 100%!important;
+        margin-bottom: 50px!important
+    }
+    div.BoxContainer {
+        margin-bottom: 30px
+    }
+}
+
+@media screen and (max-width:959px) {
+    .InputField.SearchForm>button {
+        position: absolute;
+        right: 0
+    }
+    .SearchForm.horizontal-search>input {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        height: 50px;
+        background: #fff;
+        border-radius: 0
+    }
+    .SearchForm.horizontal-search .SearchIcon {
+        width: 50px;
+        height: 50px;
+        background: none!important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none!important
+    }
+    .SearchForm.horizontal-search .SearchIcon:before {
+        font-family: fontawesome!important;
+        content: "\f002";
+        font-size: 25px;
+        color: #000
+    }
+    .SearchElement.Collapsed {
+        height: 0;
+        overflow: hidden;
+        border-bottom: 0;
+        visibility: hidden
+    }
+    .SearchToggle {
+        display: initial!important;
+        position: absolute;
+        top: 10px!important;
+        left: 10px!important;
+        z-index: 99
+    }
+    .de_epages-remotesearchUiSuggest-box {
+        width: 100%!important
+    }
+    .de_epages-remotesearchUiSuggest-box ul {
+        max-width: 100%!important
+    }
+    .SearchElement {
+        visibility: hidden;
+        height: auto;
+        transition: all 300ms linear;
+        position: absolute;
+        left: 0!important;
+        width: 100%!important;
+        background: #fff;
+        display: flex!important;
+        align-items: center;
+        z-index: 99;
+        top: 50px!important;
+        text-align: center;
+        justify-content: center
+    }
+    .InputField.SearchForm {
+        width: 90%
+    }
+    .InputField.SearchForm>input:focus {
+        border-bottom: 0!important;
+        width: 100%;
+        box-shadow: none!important
+    }
+    .HorizontalNavBar .SearchElement form {
+        margin: 0;
+        width: 100%!important
+    }
+    .FacetsToggle a {
+        font-weight: bold!important;
+        color: #fff!important
+    }
+    .menu>ul>li>ul>li:first-child {
+        margin: 0!important
+    }
+    .FacetsToggle {
+        margin: 0 auto;
+        max-width: 400px;
+        width: auto
+    }
+    .RemoteSearchFacets.ContextBox.Collapsed .FacetsToggle {
+        background: #255ccc!important
+    }
+    .RemoteSearchFacets.ContextBox .FacetsToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff!important;
+        background: #00003c!important;
+        height: 40px;
+        margin: 0 10px 10px
+    }
+    div#RemoteSearchFacets.Collapsed {
+        height: 40px;
+        overflow: hidden
+    }
+    .Middle .ContentAreaWrapper>.RemoteSearchFacets,
+    .Middle .ContentAreaWrapper .CategoryList>.RemoteSearchFacets {
+        width: 100%
+    }
+    .ShopLogo img {
+        max-width: 100%
+    }
+    .menu>ul>li>ul>li a {
+        width: calc(100% - 30px);
+        margin: 0 15px
+    }
+    .menu>ul>li>ul>li {
+        width: 100%
+    }
+    .menu-mobile {
+        color: #fff!important;
+        font-size: 0!important;
+        padding: 10px
+    }
+    .menu>ul>li>a {
+        box-sizing: border-box
+    }
+    .menu-dropdown-icon:before {
+        padding: 7px;
+        position: absolute;
+        right: 0;
+        z-index: 999
+    }
+    .menu>ul>li>a:hover {
+        background: none!important
+    }
+}
+
+@media screen and (max-width:900px) {
+    table.ProductListImageBox tr td .ImageArea img {
+        width: auto!important
+    }
+    .FourPoints {
+        flex-wrap: wrap
+    }
+    .FourPointsInner {
+        width: 50%
+    }
+    table.ProductListImageBox tr td {
+        width: 50%;
+        padding: 15px
+    }
+    .ProductDetails .InfoArea {
+        border-width: 0
+    }
+    .ProductDetails {
+        flex-wrap: wrap;
+        flex-direction: column-reverse
+    }
+    .ProductDetails .ProductImage {
+        width: 100%
+    }
+    .ImgLeft .InfoArea,
+    .ImgRight .InfoArea {
+        width: auto
+    }
+    div.BasketSharing>div>div.InputBlock {
+        flex-wrap: wrap
+    }
+    div.BasketSharing>div>div.InputBlock>div.InputField>textarea {
+        max-width: 100%;
+        width: auto
+    }
+}
+
+@media screen and (max-width:700px) {
+    .Header .PropertyContainer {
+        padding-bottom: 10px
+    }
+    .Header.HorizontalNavBar .custom-left {
+        width: 100%;
+        text-align: center
+    }
+    .Header.HorizontalNavBar .custom-right {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        width: 100%
+    }
+}
+
+@media screen and (max-width:600px) {
+    .FacetsToggle a {
+        border-width: 0!important
+    }
+    table.ProductListImageBox tr td .ImageArea img {
+        width: auto!important;
+        max-width: 100%
+    }
+    .ProductDetails .InfoArea {
+        padding: 20px!important
+    }
+    .start-page .ListItemCategory .ImageArea img {
+        max-width: 100%!important
+    }
+    .start-page .CategoryList .ListItemCategory {
+        min-width: unset;
+        width: 100%
+    }
+    .start-page .CategoryList .ListItemCategory .InfoArea {
+        bottom: -62px
+    }
+    .start-page .ListItemCategory {
+        padding-top: 50%!important;
+        margin: 0
+    }
+    .NavBarBottom img {
+        margin: 10px
+    }
+    .fa-shopping-cart:before {
+        font-size: 30px
+    }
+    .CategoryProducts form.AddToBasketForm button.AddToBasketButton.ep-js.ButtonBasket.ep-uiInput.ep-uiInput-button {
+        padding: 5px
+    }
+    .CategoryProducts form.AddToBasketForm button.AddToBasketButton::before {
+        margin-right: 10px
+    }
+    .CategoryProducts h3 a {
+        font-size: 20px
+    }
+    table.ProductListImageBox tr td {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 5px
+    }
+    .four-colums-product-list td {
+        min-height: 500px
+    }
+}
+
+@media screen and (max-width:500px) {
+    html body .GeneralLayout .HorizontalNavBar .BasketBox {
+        margin: 0!important
+    }
+    .NavBarRoof .SizeContainer,
+    .Header .SizeContainer {
+        width: auto
+    }
+    div.NavBarRoof {
+        display: none!important
+    }
+    .start-page .CategoryList .ListItemCategory {
+        width: 100%
+    }
+    .RemoteSearchResults .FloatRight.MarginBottom,
+    .CategoryProducts .FloatRight.MarginBottom {
+        margin-top: 0!important
+    }
+    .InfoArea {
+        box-sizing: border-box
+    }
+}
+
+@media screen and (max-width:389px) {
+    table.ProductListImageBox tr td {
+        width: 100%
+    }
+}
+
+.ContentArea .BreadcrumbItem, .ContentArea .BreadcrumbItem:hover, .ContentArea .BreadcrumbLastItem {
+    text-transform: uppercase;
+}
+
+.ProductDetails .NewProduct {
+    position: absolute;
+    z-index: 999;
+}
+
+.Preorder {
+    border: 2px solid #00003c;
+    height: 30px;
+    width: auto;
+    background: #00003c;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 2px 5px;
+    text-align: center;
+    margin: 0;
+    top: 72px;
+    color: #fff !important;
+    min-width: 60px;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 13px !important;
+    left: 0;
+    z-index: 99;
+    text-transform: uppercase;
+}
+
+html, body { background-size: 100%; }
+
+
+.ListItemCategory .InfoArea, .ListItemCategory .InfoArea h3, .ListItemCategory .InfoArea p, .ListItemCategory .Links, .ListItemCategory .Links h3 {
+    margin: 0 !important;
+}
+
+.CategoryList .ListItemCategory .InfoArea {
+    font-size: 0;
+}
+
+.BasketBox .FontSmaller { display: none; }
+.SmallText.DisplayBlock.ProductShippingMethods { display: none !important; }
+
+.start-page .ListItemCategory .ImageArea img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.start-page .ListItemCategory .ImageArea img {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.flexslider .slides img {
+    max-width: 100% !important;
+}
+
+.start-page .ListItemCategory .ImageArea {
+    overflow: hidden;
+}
+
+.start-page .ListItemCategory .ImageArea {
+    position: initial;
+}
+
+.start-page .ListItemCategory {
+    float: none;
+    height: auto;
+    padding-top: 0;
+}
+
+.start-page .CategoryList .ListItemCategory .InfoArea {
+    position: initial;
+}
+
+.start-page .CategoryList .ListItemCategory {
+    display: flex;
+    padding-top: 0 !important;
+    flex-wrap: wrap;
+    margin-bottom: 15px !important;
+}
+
+a:link {
+    color: inherit !important;
+}
+
+.RussianFont {
+    font-family: 'Play', sans-serif !important;
+}
+
+h1.RussianFont, h2.RussianFont, h3.RussianFont, h3 a.RussianFont, .menu>ul>li a.RussianFont, .ContextBoxHead span.RussianFont, a.flexslider-text-button.RussianFont, button.AddToBasketButton.RussianFont {
+    font-family: 'Play', sans-serif !important;
+}
+
+.flexslider li a {
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 959px) {
+    .ShopLogo img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ShopLogo img {
+        max-width: 100%;
+    }
+    .ui-dialog.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-resizable.epDialog {
+        transform: none;
+    }
+}
+
+/* Currency changing  */
+select#CurSelect {
+    border: 0;
+    border-radius: 0 !important;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMCAxMDAiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cG9seWdvbiBmaWxsPSIjMDEwMTAxIiBwb2ludHM9IjIzLjEsMzQuMSA1MS41LDYxLjcgODAsMzQuMSA4MS41LDM1IDUxLjUsNjQuMSAyMS41LDM1IDIzLjEsMzQuMSAiLz48L3N2Zz4=');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 1px;
+    width: 65px;
+    margin-left: 20px;
+}
+
+.MultipleStep-Container div#main-content {
+    position: absolute;
+}
+
+.ProductListImageBox tbody > tr:has(th),
+.BundledProductsTable tbody > tr:has(th),
+.CrossellingCount tbody > tr:has(th),
+.ListItemCategoryTable tbody > tr:has(th){
+    display: none !important;
+}
+
+#VilkasBasketForm_standalone option.STOCK_OUT_STOCK{
+    color: #aaa;
+}
