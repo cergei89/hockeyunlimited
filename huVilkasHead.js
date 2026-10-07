@@ -351,7 +351,7 @@ jQuery.ready(function () {
   }
   if (epConfig.language == "ru") {
     jQuery(".LineThrough").after('<div class="Tarjous">SALE</div>');
-    jQuery("<h2>Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÐµÐ¼</h2>").insertBefore(".start-page div.Suosituimmat");
+    jQuery("<h2>Рекомендуем</h2>").insertBefore(".start-page div.Suosituimmat");
   }
 });
 
