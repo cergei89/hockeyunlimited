@@ -120,8 +120,12 @@ function huGenerateCleanJSONLD() {
     "itemListElement": itemListElements
   };
 
-  // Inject the structured JSON-LD block directly into document head
+  // 1. Check if we already injected it previously to avoid duplicates
+  if (document.getElementById('hu-hotdeals-schema')) return;
+
+  // 2. Build and inject the structured JSON-LD block
   const script = document.createElement('script');
+  script.id = 'hu-hotdeals-schema'; // Identify it uniquely
   script.type = 'application/ld+json';
   script.text = JSON.stringify(masterSchema);
   document.head.appendChild(script);
