@@ -1,19 +1,48 @@
-const target = document.querySelector('#CategoryProducts');
+function huStartJSONLD() {
+  const target = document.querySelector('#CategoryProducts');
 
-if (target) {
-  // 1. Check if Slick already initialized (e.g. fast cached execution)
-  if (target.classList.contains('slick-initialized')) {
-    huGenerateCleanJSONLD();
-  } else {
-    // 2. Otherwise, watch for the class mutation when Slick boots up
-    const observer = new MutationObserver((mutations, obs) => {
-      if (target.classList.contains('slick-initialized')) {
-        huGenerateCleanJSONLD();
-        obs.disconnect(); // Stop watching immediately
-      }
-    });
-    observer.observe(target, { attributes: true, attributeFilter: ['class'] });
+  if (!target) {
+    console.warn('JSON-LD: #CategoryProducts not found');
+    return;
   }
+
+  let observer;
+
+  function tryGenerate() {
+    const offers = target.querySelectorAll(
+      '.HotDeal:not(.slick-cloned)'
+    );
+
+    if (!offers.length) return false;
+
+    console.log('JSON-LD: Found', offers.length, 'products');
+
+    huGenerateCleanJSONLD();
+
+    if (observer) observer.disconnect();
+
+    return true;
+  }
+
+  // Try immediately
+  if (tryGenerate()) return;
+
+  // Wait for products to appear in the DOM
+  observer = new MutationObserver(() => {
+    tryGenerate();
+  });
+
+  observer.observe(target, {
+    childList: true,
+    subtree: true
+  });
+}
+
+// Handle both early and late script execution
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', huStartJSONLD);
+} else {
+  huStartJSONLD();
 }
 
 function huGenerateCleanJSONLD() {
