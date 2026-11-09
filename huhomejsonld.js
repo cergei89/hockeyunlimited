@@ -22,6 +22,34 @@ function huGenerateCleanJSONLD() {
                 ? window.location.origin + offerEl.querySelector('.ProductName').getAttribute('href')
                 : window.location.href;
 
+    // --- NEW: Extract and clean old price if it exists ---
+    const oldPriceEl = offerEl.querySelector('.hotdeal-old-price.LineThrough');
+    let oldPrice = null;
+    if (oldPriceEl) {
+      const oldPriceRaw = oldPriceEl.innerText || '';
+      // Clean string: remove spaces/currency symbols and swap comma to dot for schema compliance
+      oldPrice = oldPriceRaw.replace(/[^0-9,.]/g, '').replace(',', '.');
+    }
+
+    // Base offer object with current active sale price
+    const offersObj = {
+      "@type": "Offer",
+      "price": price,
+      "priceCurrency": currency,
+      "availability": "https://schema.org" // Upgraded to valid schema status URL
+    };
+
+    // Attach original price specification if found
+    if (oldPrice && !isNaN(parseFloat(oldPrice))) {
+      offersObj.priceSpecification = {
+        "@type": "UnitPriceSpecification",
+        "priceType": "https://schema.org",
+        "price": oldPrice,
+        "priceCurrency": currency
+      };
+    }
+    // ----------------------------------------------------
+
     // Push into the structural array ordered by its visual position
     itemListElements.push({
       "@type": "ListItem",
@@ -32,12 +60,7 @@ function huGenerateCleanJSONLD() {
         "image": image,
         "url": url,
         "description": name,
-        "offers": {
-          "@type": "Offer",
-          "price": price,
-          "priceCurrency": currency,
-          "availability": "https://schema.org"
-        }
+        "offers": offersObj
       }
     });
   });
