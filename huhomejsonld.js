@@ -1,6 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Use a slight timeout to ensure Slick slider has parsed the track items
-  setTimeout(huGenerateCleanJSONLD, 800);
+  const target = document.querySelector('#CategoryProducts');
+  if (!target) return;
+
+  if (target.classList.contains('slick-initialized')) {
+  huGenerateCleanJSONLD();
+  return;
+}
+  const observer = new MutationObserver((mutations, obs) => {
+    // Slick adds the 'slick-initialized' class when it's done
+    if (target.classList.contains('slick-initialized')) {
+      huGenerateCleanJSONLD();
+      obs.disconnect(); // Stop watching once data is grabbed
+    }
+  });
+
+  observer.observe(target, { attributes: true, attributeFilter: ['class'] });
 });
 
 function huGenerateCleanJSONLD() {
@@ -18,9 +32,11 @@ function huGenerateCleanJSONLD() {
     const currency = offerEl.querySelector('[itemprop="priceCurrency"]')?.getAttribute('content') || 'EUR';
     
     // Extract deep product link path
-    const url = offerEl.querySelector('.ProductName')?.getAttribute('href') 
-                ? window.location.origin + offerEl.querySelector('.ProductName').getAttribute('href')
-                : window.location.href;
+    const linkEl = offerEl.querySelector('.ProductName');
+
+     const url = linkEl?.getAttribute('href') 
+                ? new URL(linkEl.getAttribute('href'), window.location.href).href 
+                : null;
 
     // --- NEW: Extract and clean old price if it exists ---
     const oldPriceEl = offerEl.querySelector('.hotdeal-old-price.LineThrough');
@@ -28,7 +44,10 @@ function huGenerateCleanJSONLD() {
     if (oldPriceEl) {
       const oldPriceRaw = oldPriceEl.innerText || '';
       // Clean string: remove spaces/currency symbols and swap comma to dot for schema compliance
-      oldPrice = oldPriceRaw.replace(/[^0-9,.]/g, '').replace(',', '.');
+      oldPrice = oldPriceRaw
+                .replace(/[^\d,.-]/g, '')
+                .replace(/\./g, '')
+                .replace(',', '.');
     }
 
     // Base offer object with current active sale price
@@ -36,14 +55,13 @@ function huGenerateCleanJSONLD() {
       "@type": "Offer",
       "price": price,
       "priceCurrency": currency,
-      "availability": "https://schema.org" // Upgraded to valid schema status URL
     };
 
     // Attach original price specification if found
     if (oldPrice && !isNaN(parseFloat(oldPrice))) {
       offersObj.priceSpecification = {
         "@type": "UnitPriceSpecification",
-        "priceType": "https://schema.org",
+        "priceType": "https://schema.org/StrikethroughPrice",
         "price": oldPrice,
         "priceCurrency": currency
       };
@@ -59,7 +77,6 @@ function huGenerateCleanJSONLD() {
         "name": name,
         "image": image,
         "url": url,
-        "description": name,
         "offers": offersObj
       }
     });
