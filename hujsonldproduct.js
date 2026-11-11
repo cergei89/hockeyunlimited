@@ -4,7 +4,7 @@ function huInitProductSchema() {
     const name = document.querySelector('meta[property="og:title"]')?.getAttribute('content')?.trim() || document.title;
 
     const description = document.querySelector('meta[property="og:description"]')?.getAttribute('content')?.trim()
-      || document.querySelector('meta[name="description"]')?.getAttribute('content')?.trim()
+      || document.querySelector('meta[name="description"]')?.getAttribute('content')?.trim();
 
     const image = document.querySelector('meta[property="og:image"]')?.getAttribute('content')?.trim() || '';
     const url = document.querySelector('meta[property="og:url"]')?.getAttribute('content')?.trim()
@@ -15,7 +15,7 @@ function huInitProductSchema() {
     // 2. Extract Brand directly from <meta itemprop="brand">
     const detectedBrand = document.querySelector('[itemprop="brand"]')?.getAttribute('content')?.trim() || '';
 
-       // 3. Extract Active Price from <span itemprop="price" content="169.15">169,15</span>
+    // 3. Extract Active Price from <span itemprop="price" content="169.15">169,15</span>
     const priceEl = mainArea.querySelector('[itemprop="price"]');
     let price = priceEl?.getAttribute('content')?.trim() || '';
 
@@ -26,11 +26,16 @@ function huInitProductSchema() {
     const priceContainer = priceEl?.closest('.PriceContainer') || mainArea.querySelector('.PriceContainer');
     const oldPriceEl = priceContainer?.querySelector('span.LineThrough, .LineThrough');
     if (oldPriceEl) {
-      const oldPriceRaw = oldPriceEl.textContent || '';
-      oldPrice = oldPriceRaw
-        .replace(/[^\d,.-]/g, '')
-        .replace(/\./g, '')
-        .replace(',', '.');
+      let cleaned = (oldPriceEl.textContent || '').replace(/[^\d.,]/g, '');
+      const lastComma = cleaned.lastIndexOf(',');
+      const lastDot = cleaned.lastIndexOf('.');
+
+      if (lastComma > lastDot) {
+        cleaned = cleaned.replace(/\./g, '').replace(',', '.');
+      } else if (lastDot > lastComma) {
+        cleaned = cleaned.replace(/,/g, '');
+      }
+      oldPrice = cleaned;
     }
 
     // 5. Build Offer Object
