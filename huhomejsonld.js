@@ -71,11 +71,16 @@ function huGenerateCleanJSONLD() {
     let oldPrice = null;
     if (oldPriceEl) {
       const oldPriceRaw = oldPriceEl.innerText || '';
-      // Clean string: remove spaces/currency symbols and swap comma to dot for schema compliance
-      oldPrice = oldPriceRaw
-                .replace(/[^\d,.-]/g, '')
-                .replace(/\./g, '')
-                .replace(',', '.');
+      let cleaned = oldPriceRaw.replace(/[^\d.,]/g, '');
+      const lastComma = cleaned.lastIndexOf(',');
+      const lastDot = cleaned.lastIndexOf('.');
+
+      if (lastComma > lastDot) {
+        cleaned = cleaned.replace(/\./g, '').replace(',', '.');
+      } else if (lastDot > lastComma) {
+        cleaned = cleaned.replace(/,/g, '');
+      }
+      oldPrice = cleaned;
     }
 
     // Base offer object with current active sale price
