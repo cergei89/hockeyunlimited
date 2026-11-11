@@ -1,3 +1,4 @@
+<script>
 function huInitCategorySchema() {
   // 1. Guard: Exit if this is a single product page
   if (document.querySelector('.ProductDetails')) return;
@@ -11,11 +12,9 @@ function huInitCategorySchema() {
 
     productLinks.forEach((linkEl, index) => {
       const rawHref = linkEl.getAttribute('href');
-      console.log("h3.TopPaddingWide > a " + rawHref);
       if (!rawHref) return;
 
       const fullUrl = new URL(rawHref, window.location.href).href;
-      console.log("window.location.href " + window.location.href);
       const productName = linkEl.innerText.trim();
 
       // Find the parent container (table cell or box) for this specific product
@@ -89,8 +88,6 @@ function huInitCategorySchema() {
     // Extract category metadata from the page
     const categoryName = document.querySelector('meta[property="og:title"]')?.getAttribute('content') || document.title;
 
-    console.log("h1 " + categoryName);
-
     const categoryDesc = document.querySelector('meta[property="og:description"]')?.getAttribute('content') || '';
     const canonicalUrl = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
 
@@ -142,3 +139,4 @@ if (document.readyState === 'loading') {
 } else {
   huInitCategorySchema();
 }
+</script>
