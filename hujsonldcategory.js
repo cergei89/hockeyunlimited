@@ -1,3 +1,4 @@
+<script>
 function huInitCategorySchema() {
   // 1. Guard: Exit if this is a single product page
   if (document.querySelector('.ProductDetails')) return;
@@ -59,7 +60,7 @@ function huInitCategorySchema() {
       if (oldPrice && !isNaN(parseFloat(oldPrice))) {
         offersObj.priceSpecification = {
           "@type": "UnitPriceSpecification",
-          "priceType": "https://schema.org",
+          "priceType": "https://schema.org/StrikethroughPrice",
           "price": oldPrice,
           "priceCurrency": currency
         };
@@ -142,3 +143,4 @@ if (document.readyState === 'loading') {
 } else {
   huInitCategorySchema();
 }
+</script>
