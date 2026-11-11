@@ -1,3 +1,4 @@
+<script>
 function huInitCategorySchema() {
   // 1. Guard: Exit if this is a single product page
   if (document.querySelector('.ProductDetails')) return;
@@ -18,12 +19,69 @@ function huInitCategorySchema() {
       console.log("window.location.href " + window.location.href);
       const productName = linkEl.innerText.trim();
 
-      // Google recommends only position and URL (plus optional name) for category ItemLists
+      // Find the parent container (table cell or box) for this specific product
+      const cardEl = linkEl.closest('td') || linkEl.closest('.ProductListImageBox') || linkEl.parentElement;
+
+      // Extract product image
+      const imgEl = cardEl?.querySelector('img');
+      const image = imgEl?.src || '';
+
+      // Extract active price (checks itemprop first, then falls back to .price-value text)
+      let price = cardEl?.querySelector('[itemprop="price"]')?.getAttribute('content') || '';
+      if (!price) {
+        const priceRaw = cardEl?.querySelector('.price-value')?.innerText || '';
+        price = priceRaw
+          .replace(/[^\d,.-]/g, '')
+          .replace(/\./g, '')
+          .replace(',', '.');
+      }
+
+      const currency = cardEl?.querySelector('[itemprop="priceCurrency"]')?.getAttribute('content') || 'EUR';
+
+      // Extract and clean strikethrough/old price if it exists
+      const oldPriceEl = cardEl?.querySelector('.LineThrough');
+      let oldPrice = null;
+      if (oldPriceEl) {
+        const oldPriceRaw = oldPriceEl.innerText || '';
+        oldPrice = oldPriceRaw
+          .replace(/[^\d,.-]/g, '')
+          .replace(/\./g, '')
+          .replace(',', '.');
+      }
+
+      // Build Offer object
+      const offersObj = {
+        "@type": "Offer",
+        "price": price,
+        "priceCurrency": currency
+      };
+
+      // Attach strikethrough price specification if found
+      if (oldPrice && !isNaN(parseFloat(oldPrice))) {
+        offersObj.priceSpecification = {
+          "@type": "UnitPriceSpecification",
+          "priceType": "https://schema.org",
+          "price": oldPrice,
+          "priceCurrency": currency
+        };
+      }
+
+      // Build nested Product inside ListItem
+      const productItem = {
+        "@type": "Product",
+        "name": productName,
+        "url": fullUrl,
+        "offers": offersObj
+      };
+
+      if (image) {
+        productItem.image = image;
+      }
+
       itemListElements.push({
         "@type": "ListItem",
         "position": index + 1,
-        "url": fullUrl,
-        "name": productName
+        "item": productItem
       });
     });
 
@@ -85,3 +143,4 @@ if (document.readyState === 'loading') {
 } else {
   huInitCategorySchema();
 }
+</script>
