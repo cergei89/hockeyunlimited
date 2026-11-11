@@ -1,4 +1,4 @@
-<script>
+
 function huInitCategorySchema() {
   // Avoid duplicate injection
   if (document.getElementById('hu-category-schema')) return;
@@ -68,4 +68,3 @@ if (document.readyState === 'loading') {
 } else {
   huInitCategorySchema();
 }
-</script>
