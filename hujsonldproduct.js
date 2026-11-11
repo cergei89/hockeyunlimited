@@ -21,12 +21,12 @@ function huInitProductSchema() {
 
     const currency = mainArea.querySelector('[itemprop="priceCurrency"]')?.getAttribute('content')?.trim() || '';
 
-    // 4. Extract Old / Strikethrough Price ONLY from the main product's price container
+    // 4. Extract Old / Strikethrough Price ONLY from the main product's .PriceContainer
     let oldPrice = null;
-    const priceContainer = priceEl?.closest('.PriceContainer, .InfoArea, td, div') || priceEl?.parentElement;
+    const priceContainer = priceEl?.closest('.PriceContainer') || mainArea.querySelector('.PriceContainer');
     const oldPriceEl = priceContainer?.querySelector('span.LineThrough, .LineThrough');
     if (oldPriceEl) {
-      const oldPriceRaw = oldPriceEl.innerText || '';
+      const oldPriceRaw = oldPriceEl.textContent || '';
       oldPrice = oldPriceRaw
         .replace(/[^\d,.-]/g, '')
         .replace(/\./g, '')
