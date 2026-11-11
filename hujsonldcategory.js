@@ -27,10 +27,16 @@ function huInitCategorySchema() {
       let price = cardEl?.querySelector('[itemprop="price"]')?.getAttribute('content') || '';
       if (!price) {
         const priceRaw = cardEl?.querySelector('.price-value')?.innerText || '';
-        price = priceRaw
-          .replace(/[^\d,.-]/g, '')
-          .replace(/\./g, '')
-          .replace(',', '.');
+        let cleanedPrice = priceRaw.replace(/[^\d.,]/g, '');
+        const lastComma = cleanedPrice.lastIndexOf(',');
+        const lastDot = cleanedPrice.lastIndexOf('.');
+
+        if (lastComma > lastDot) {
+          cleanedPrice = cleanedPrice.replace(/\./g, '').replace(',', '.');
+        } else if (lastDot > lastComma) {
+          cleanedPrice = cleanedPrice.replace(/,/g, '');
+        }
+        price = cleanedPrice;
       }
 
       const currency = cardEl?.querySelector('[itemprop="priceCurrency"]')?.getAttribute('content') || 'EUR';
@@ -40,10 +46,16 @@ function huInitCategorySchema() {
       let oldPrice = null;
       if (oldPriceEl) {
         const oldPriceRaw = oldPriceEl.innerText || '';
-        oldPrice = oldPriceRaw
-          .replace(/[^\d,.-]/g, '')
-          .replace(/\./g, '')
-          .replace(',', '.');
+        let cleanedOld = oldPriceRaw.replace(/[^\d.,]/g, '');
+        const lastComma = cleanedOld.lastIndexOf(',');
+        const lastDot = cleanedOld.lastIndexOf('.');
+
+        if (lastComma > lastDot) {
+          cleanedOld = cleanedOld.replace(/\./g, '').replace(',', '.');
+        } else if (lastDot > lastComma) {
+          cleanedOld = cleanedOld.replace(/,/g, '');
+        }
+        oldPrice = cleanedOld;
       }
 
       // Build Offer object
