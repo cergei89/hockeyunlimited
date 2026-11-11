@@ -1,21 +1,17 @@
+<script>
 function huInitCategorySchema() {
   // Avoid duplicate injection
   if (document.getElementById('hu-category-schema')) return;
   // 1. Guard: Exit if this is a single product page or homepage carousel
   if (document.querySelector('.ProductDetails')) return;
 
-  // 2. Target the product cards inside the Vilkas category grid
-  // Note: Adjust '.ProductListImageBox' if your product cards use a different outer wrapper
-  const productCards = document.querySelectorAll('.ProductListImageBox');
-  if (!productCards.length) return;
+  // 2. Target the product links directly inside the Vilkas category grid container
+  const productLinks = document.querySelectorAll('.ProductListImageBox h3.TopPaddingWide > a');
+  if (!productLinks.length) return;
 
   const itemListElements = [];
 
-  productCards.forEach((card, index) => {
-    // Extract the product link (matches your CSS selector: h3.TopPaddingWide > a)
-    const linkEl = card.querySelector('h3.TopPaddingWide > a') || card.querySelector('a[href]');
-    if (!linkEl) return;
-
+  productLinks.forEach((linkEl, index) => {
     const rawHref = linkEl.getAttribute('href');
     console.log("h3.TopPaddingWide > a " + rawHref);
     if (!rawHref) return;
@@ -72,3 +68,4 @@ if (document.readyState === 'loading') {
 } else {
   huInitCategorySchema();
 }
+</script>
