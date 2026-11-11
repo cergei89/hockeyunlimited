@@ -1,4 +1,3 @@
-<script>
 function huInitCategorySchema() {
   // 1. Guard: Exit if this is a single product page
   if (document.querySelector('.ProductDetails')) return;
@@ -139,4 +138,3 @@ if (document.readyState === 'loading') {
 } else {
   huInitCategorySchema();
 }
-</script>
