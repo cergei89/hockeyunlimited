@@ -1,4 +1,9 @@
 function huInitProductSchema() {
+  const mainProductMicrodata = document.querySelector('div[itemscope][itemtype="https://schema.org/Product"][itemprop="mainEntity"]');
+if (mainProductMicrodata) {
+  mainProductMicrodata.removeAttribute('itemscope');
+  mainProductMicrodata.removeAttribute('itemtype');
+}
   function buildOrUpdateProductSchema() {
     // 1. Extract core metadata from Open Graph & DOM
     const name = document.querySelector('meta[property="og:title"]')?.getAttribute('content')?.trim() || document.title;
