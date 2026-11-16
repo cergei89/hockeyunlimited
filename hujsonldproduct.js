@@ -1,9 +1,4 @@
 function huInitProductSchema() {
-  /*const mainProductMicrodata = document.querySelector('div[itemscope][itemtype="https://schema.org/Product"][itemprop="mainEntity"]');
-if (mainProductMicrodata) {
-  mainProductMicrodata.removeAttribute('itemscope');
-  mainProductMicrodata.removeAttribute('itemtype');
-}*/
   function buildOrUpdateProductSchema() {
     // 1. Extract core metadata from Open Graph & DOM
     const name = document.querySelector('meta[property="og:title"]')?.getAttribute('content')?.trim() || document.title;
@@ -112,8 +107,8 @@ if (mainProductMicrodata) {
       }
 
       const ratingValue = ratingEl?.getAttribute('content')?.trim() || ratingEl?.textContent?.trim();
-      const bestRating = bestEl?.getAttribute('content')?.trim() || '5';
-      const worstRating = worstEl?.getAttribute('content')?.trim() || '1';
+      const bestRating = bestEl?.getAttribute('content')?.trim() || bestEl?.textContent?.trim() || '5';
+      const worstRating = worstEl?.getAttribute('content')?.trim() || worstEl?.textContent?.trim() || '1';
       const reviewName = titleEl?.textContent?.trim() || '';
       const authorName = authorEl?.textContent?.trim() || '';
       const reviewBody = bodyEl?.textContent?.trim() || '';
@@ -146,6 +141,19 @@ if (mainProductMicrodata) {
         reviews.push(reviewObj);
       }
     });
+
+  // Strip microdata from reviews and ratings to eliminate conflict with JSON-LD
+  document.querySelectorAll('[itemscope]').forEach(el => {
+    const type = el.getAttribute('itemtype') || '';
+    if (
+      type.includes('schema.org/Review') ||
+      type.includes('schema.org/Rating') ||
+      type.includes('schema.org/AggregateRating')
+    ) {
+      el.removeAttribute('itemscope');
+      el.removeAttribute('itemtype');
+    }
+  });
 
     // 8. Build Offer Object
     const offersObj = {
