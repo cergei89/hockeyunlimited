@@ -1,5 +1,10 @@
 function huInitProductSchema() {
   function buildOrUpdateProductSchema() {
+    // 0. Strip root Product microdata so Google only reads the JSON-LD schema
+    document.querySelectorAll('div[itemscope][itemtype="https://schema.org/Product"]').forEach(el => {
+      el.removeAttribute('itemscope');
+      el.removeAttribute('itemtype');
+    });
     // 1. Extract core metadata from Open Graph & DOM
     const name = document.querySelector('meta[property="og:title"]')?.getAttribute('content')?.trim() || document.title;
 
